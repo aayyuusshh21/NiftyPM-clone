@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./login.css">
-     <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
       rel="stylesheet"
       href="/punchy-flowers-9069/commonStyles/common.css"
-    /> 
-
-
-</head>
-<body>
-    <img id="logo" src="https://nifty.pm/static/media/nifty-logo.622c3309bcffc8b8f40273706462925f.svg" alt="">
-    <div id="container">
-      <div id="child1">
-        <h2>
-            <span class="label">COMING SOON</span>
-           Reporting Dashboard
-        </h2>
-        <p>
-            Powerful reporting to keep you on top of your business and workload. Customize your dashboard to gain insights and make informed decisions.
-        </p>
-        <img src="https://nifty.pm/static/media/main.9818dcc508e7ef1f7d96.png" alt="">
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="image">
+        <img
+          id="logo"
+          src="https://nifty.pm/static/media/nifty-logo.622c3309bcffc8b8f40273706462925f.svg"
+          alt=""
+        />
       </div>
-      <div id="child2">
-        <h1>Log in to your account</h1>
-        <h2>Email Address *</h2>
-        <input type="text" id="email" placeholder="name@company.com">
-        <h2>Password *
-            <span id="pass">Forget Password?</span>
-        </h2>
-        <input type="password" id="password" placeholder="Password">
-        <button id="login">Log in</button>
-        <h3> <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt=""> <a href="" id="google"> Sign in with Google</a></h3>
-        <h3> <a href="" id="sso"> Sign in wth SSO</a></h3>
-        <h3 class="horizontal_line">  or</h3>
-        <h3>Don't have an account?</h3>
-        <button id="signup">Sign up for free</button>
+      <div class="box">
+        <div class="child-1">
+          <span>COMING SOON</span>
+          <span>Reporting Dashboard</span>
+          <p>
+            Powerful reporting to keep you on top of your business and workload.
+            Customize your dashboard to gain insights and make informed
+            decisions.
+          </p>
+          <img
+            src="https://nifty.pm/static/media/main.9818dcc508e7ef1f7d96.png"
+            alt=""
+          />
+        </div>
+        <div class="child-2">
+          <h2>Log in to your account</h2>
+          <form>
+            <label for="email">Email Address* </label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="name@company.com"
+            /><br />
+            <div>
+              <label for="password">Password*</label
+              ><label for="">Forget Password?</label>
+            </div>
+            <input type="password" id="password" placeholder="Password" /><br />
+            <button id="loginBtn">Log in</button>
+          </form>
+          <div>
+            <img
+              src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+              alt=""
+            />
+            <span> Sign in with Google</span>
+          </div>
+          <div>Sign in wth SSO</div>
+          <div>or</div>
+          <div>Don't have an account?</div>
+          <div>
+            <button class="signup">Sign up for free</button>
+          </div>
+        </div>
       </div>
     </div>
-</body>
+  </body>
 </html>

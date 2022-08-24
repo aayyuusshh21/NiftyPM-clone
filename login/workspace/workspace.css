@@ -1,46 +1,67 @@
-body{
-    text-align: center;
-    background-image: url(https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+.workspace {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
-#logo{
-    width: 120px;
+.image {
+  text-align: center;
+  margin: 40px 0;
 }
-#container{
-    width: 1300px;
-    height: 800px;
-    margin-left: 250px;
-    margin-top: 50px;
-   background-color: white;
-   border: 1px solid grey;
-   border-radius: 10px;
-   justify-content: center;
-   padding: 20px;
+#logo {
+  width: 100px;
 }
-#container>h1{
-   font-size: 40px;
-    font-weight: 200;
+.box {
+  width: 60%;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+  height: 75vh;
+  padding: 45px;
 }
-#container>p {
-    font-size:  20px; ;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.box > div {
+  display: flex;
+  justify-content: center;
 }
-#plus_logo{
-    margin-top: 60px;
-    margin-left: 540px;
-    width: 200px;
-    height: 170px;
-    border: 1px solid grey;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 40px 10px 10px 10px;
-    border-radius: 10px;
+.box > div:nth-child(1) {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 23px;
 }
-#plus_logo>img{
-    width: 80%;
+.box > div:nth-child(2) {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.box > div:nth-child(3) {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(246, 243, 243);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.box > div:nth-child(3):hover {
+  background-color: rgb(238, 232, 223);
+}
+.box > div:nth-child(4) {
+  margin-bottom: 7px;
+}
+.box > div:nth-child(3) > div {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #fff;
+}
+.box > div:nth-child(3) > div img {
+  width: 60%;
+  height: 50%;
 }
