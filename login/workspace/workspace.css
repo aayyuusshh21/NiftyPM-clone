@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background-image: url(https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#logo{
+    width: 120px;
+}
+#container{
+    width: 1300px;
+    height: 800px;
+    margin-left: 250px;
+    margin-top: 50px;
+   background-color: white;
+   border: 1px solid grey;
+   border-radius: 10px;
+   justify-content: center;
+   padding: 20px;
+}
+#container>h1{
+   font-size: 40px;
+    font-weight: 200;
+}
+#container>p {
+    font-size:  20px; ;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#plus_logo{
+    margin-top: 60px;
+    margin-left: 540px;
+    width: 200px;
+    height: 170px;
+    border: 1px solid grey;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 40px 10px 10px 10px;
+    border-radius: 10px;
+}
+#plus_logo>img{
+    width: 80%;
+}
