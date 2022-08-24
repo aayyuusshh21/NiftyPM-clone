@@ -3,6 +3,7 @@
     height: 100vh;
     background-image: url(https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png);
     background-repeat: no-repeat;
+
     background-size: cover;
   }
   .image {
@@ -13,6 +14,7 @@
     width: 100px;
   }
   .box {
+
     display: flex;
     width: 60%;
     margin: auto;
