@@ -20,7 +20,6 @@
     left: 44rem;
     right: 44rem;
     bottom: 5rem;
-
     border: none;
     background-color: white;
     border-radius: 4rem;
@@ -43,7 +42,7 @@
     border-radius: 1rem;
     height: 15rem;
     background-color: #d6d6d6;
-    background-image: linear-gradient(#919191, #f0f0f0);
+    /* background-image: linear-gradient(#919191, #f0f0f0); */
 }
 
 /* VIDEO TRAILER */
@@ -93,12 +92,12 @@
     justify-content: center;
     width: 30%;
     margin: auto;
-    margin-top: -2rem;
+    margin-top: -1rem;
     margin-bottom: -2rem;
 }
 
 #heading_img h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 #heading_img h1 img {
@@ -144,6 +143,10 @@
     background-color: #007b71;
 }
 
+.input_button button a {
+    text-decoration: none;
+}
+
 #google_signup {
     gap: 1rem;
     width: 31rem;
@@ -162,20 +165,19 @@
 }
 
 #google_signup img {
-    /* border: 2px solid red; */
     width: 1rem;
     height: 1rem;
 }
 
 hr {
+    border: none;
     width: 32rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: red;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid wheat;
 }
 
 .first_box {
-    background-image: linear-gradient(#ffffff, #e8e8e8);
     padding-bottom: 1rem;
     border-radius: 1rem;
 }
@@ -185,6 +187,10 @@ hr {
 .Second_box {
     text-align: center;
     margin-top: 5rem;
+}
+
+.Second_box p{
+    color: #8b99ad;
 }
 
 .image {
@@ -204,8 +210,11 @@ hr {
     height: 3rem;
     text-align: center;
     margin: auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 10rem;
+}
+
+.section__divider p{
+    color: #6d7d96;
 }
 
 /* random changing part of the website  */
@@ -313,12 +322,14 @@ hr {
     border-radius: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.486),rgb(234, 234, 234),rgb(255, 255, 209),rgba(148, 255, 148, 0.619),rgba(120, 120, 255, 0.546),rgba(213, 155, 255, 0.614),rgb(255, 202, 255));
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.486), rgb(234, 234, 234), rgb(255, 255, 209), rgba(148, 255, 148, 0.619), rgba(120, 120, 255, 0.546), rgba(213, 155, 255, 0.614), rgb(255, 202, 255));
     margin-bottom: 3rem;
     box-shadow: 0px 0px 20px -8px black;
-
 }
-a{
-    text-decoration: none;
-    color: white;
+
+#lastBox h1{
+    margin-top: -1rem;
+    font-family:Volkhov,sans-serif;
+    font-weight: normal;
+    font-style: italic;
 }
