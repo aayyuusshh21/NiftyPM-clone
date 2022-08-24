@@ -12,7 +12,7 @@ nav > div {
   display: flex;
   width: 85%;
   align-items: center;
-  padding: 14px 20px;
+  padding: 0 20px;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -25,6 +25,7 @@ nav > div {
   justify-content: center;
 }
 .elements {
+  padding: 14px 0;
   width: 70%;
   display: flex;
   justify-content: center;
@@ -40,14 +41,25 @@ nav > div {
   line-height: 36px;
   cursor: pointer;
 }
+.elements > div > a {
+  padding: 0 15px;
+}
 .demo {
+  text-decoration: none;
+  border-radius: 4px;
+  line-height: 36px;
+  cursor: pointer;
   color: #00baab;
 }
 .elements > div > p:hover {
   color: #00baab;
 }
-.elements > div:nth-child(6) > p:hover {
+.demo:hover {
   color: black;
+}
+a {
+  text-decoration: none;
+  color: #020202;
 }
 .logo {
   margin-top: 5px;
@@ -85,7 +97,7 @@ nav > div {
   width: 450px;
   padding: 15px 20px;
   border-radius: 8px;
-  margin-top: 9px;
+  /* margin-top: 9px; */
   background: #fff;
   box-shadow: 0 0 35px rgb(0 0 0 / 20%);
   color: #020202;
@@ -104,9 +116,8 @@ nav > div {
   grid-template-columns: repeat(2, 1fr);
   gap: 17px;
 }
-a {
-  text-decoration: none;
-  color: black;
+.dropdown a:hover {
+  color: #00baab;
 }
 .elements > div:hover .dropdown {
   visibility: visible;
