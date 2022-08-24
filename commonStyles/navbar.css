@@ -43,18 +43,23 @@ nav > div {
 }
 .elements > div > a {
   padding: 0 15px;
+}
+.demo {
+  text-decoration: none;
   border-radius: 4px;
   line-height: 36px;
   cursor: pointer;
-}
-.demo {
   color: #00baab;
 }
 .elements > div > p:hover {
   color: #00baab;
 }
-.elements > div:nth-child(6) > p:hover {
+.demo:hover {
   color: black;
+}
+a {
+  text-decoration: none;
+  color: #020202;
 }
 .logo {
   margin-top: 5px;
@@ -113,10 +118,6 @@ nav > div {
 }
 .dropdown a:hover {
   color: #00baab;
-}
-a {
-  text-decoration: none;
-  color: black;
 }
 .elements > div:hover .dropdown {
   visibility: visible;
