@@ -10,18 +10,18 @@ body{
 }
 #container{
     /* border: 1px grey solid; */
-    width: 1300px;
+    width: 1200px;
     height: 800px;
-    margin-left: 250px;
+    margin-left: 350px;
     margin-top: 50px;
     display: flex;
-   
+   /* padding: 30px; */
 
 }
 #container>div{
     width: 50%;
    text-align: left;
-   padding: 30px;
+   padding: 50px;
 }
 #container>div>h2{
     margin-bottom: 5%;
@@ -41,18 +41,18 @@ body{
     vertical-align: middle;
     
 }
-#container>div>img{
-    width: 600px;
+#container>#child1>img{
+    width: 500px;
     height: 350px;
     margin-top: 50px;
 }
 
 #pass{
-    margin-left: 300px;
+    margin-left: 140px;
     
 }
 #child1>p{
-    font-size: 25px;
+    font-size: 20px;
 }
 #child2{
     justify-content: center;
@@ -61,22 +61,24 @@ body{
     background-color: white;
 }
 #child2 h2{
+    margin-top: 20px;
     color: grey;
 }
 #child2 input {
-    padding: 10px 180px;
+    padding: 10px 120px;
     font-size: 20px;
-    
+    margin-bottom: 10px;
 }
 #child2>#login{
-    margin-top: 50px;
-    padding: 10px 290px;
+    margin-top: 30px;
+    padding: 10px ;
     font-size: 20px;
     background-color: skyblue;
     color: white;
     border: 0;
     border-radius: 10px;
     margin-bottom: 20px;
+    width: 500px;
 }
 #child2>h3>#google{
   /* margin-left: 190px; */
@@ -99,18 +101,18 @@ body{
     font-size: 20px;
     background-color: white;
     border-radius: 5px;
-    margin-left: 140px;
+    margin-left: 80px;
     margin-top: 20px;
     border-color: grey;
 }
 #child2>h3{
+    margin-top: 20px;
     text-align: center;
 }
 #child2>h3>img{
     width: 20px;
 }
 .horizontal_line {
-    
     width: 90%;
     height: 5px;
     border-top: 1px solid grey;
