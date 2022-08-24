@@ -113,7 +113,7 @@
     border-radius: 50%;
     color: white;
     text-align: center;
-    background: linear-gradient(90deg,#5cc0f5,#8dd7ff);
+    background: linear-gradient(90deg,#ff5a43,#ff735f);
     line-height: 56px;
 }
 
@@ -154,6 +154,11 @@
     display: inline-flex;
     gap: 20px;
 }
+
+.bck{
+    background-image: url("https://niftypm.com/_nuxt/img/cloud-decoration.1932f4a.png");
+}
+
 .button > img{
     width: 20px;
 }

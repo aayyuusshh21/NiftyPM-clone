@@ -147,10 +147,28 @@
 }
 
 .maindata img{
-    width: 70%;
+    width: 90%;
 }
 
 #fre{
     display: inline-flex;
     gap: 20px;
+}
+
+.bck{
+    background-image: url("https://niftypm.com/_nuxt/img/cloud-decoration.1932f4a.png");
+}
+.button > img{
+    width: 20px;
+}
+
+.button{
+    color: #00baab;
+    text-align: center;
+    border: 0px;
+}
+
+.hi{
+    background-image: url("https://niftypm.com/_nuxt/img/cloud-decoration.1932f4a.png");
+    background-size: 100% 100%;
 }
