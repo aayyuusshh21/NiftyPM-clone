@@ -20,6 +20,10 @@
     font-weight: 600;
 }
 
+#agilePM + P{
+    font-size: 10px;
+}
+
 #google_signup img{
     width: 50px;
     align-items: center;
@@ -147,10 +151,19 @@
 }
 
 .maindata img{
-    width: 70%;
+    width: 100%;
 }
 
 #fre{
     display: inline-flex;
     gap: 20px;
+}
+.button > img{
+    width: 20px;
+}
+
+.button{
+    color: #00baab;
+    text-align: center;
+    border: 0px;
 }

@@ -147,10 +147,20 @@
 }
 
 .maindata img{
-    width: 70%;
+    width: 100%;
+    margin: 0;
 }
 
 #fre{
     display: inline-flex;
     gap: 20px;
+}
+.button > img{
+    width: 20px;
+}
+
+.button{
+    color: #00baab;
+    text-align: center;
+    border: 0px;
 }

@@ -13,41 +13,44 @@ let showImgOnWebpage = (value) =>{
     maindata.innerHTML = "";
     
     
+
+
+
     
-    if(value === "Portfolios ."){
+    if(value === "Visualize Campaign Schedules ."){
         let one = document.createElement("h1")
-        one.innerText = "Portfolios"
+        one.innerText = "Visualize Campaign Schedules"
         
         let two = document.createElement("p")
-        two.innerText = "Create portofolios based on attorneys, or case types to manage and track your case statuses in real-time."
+        two.innerText = "Plan campaign schedules using milestones with start and end dates to ensure marketing efforts are coordinated, consistent, and visually trackable."
 
         let three = document.createElement("img")
-        three.src = "https://niftypm.com/_nuxt/img/large@1x.9444893.webp";
+        three.src = "https://niftypm.com/_nuxt/img/large@1x.ba76fb1.webp";
 
         maindata.append(one,two,three);
     } 
-    else if(value === "... Progress Reporting ."){
+    else if(value === "... Manage Campaign Tracking ."){
         let one = document.createElement("h1")
-        one.innerText = "Progress Reporting"
+        one.innerText = "Manage Campaign Tracking"
         
         let two = document.createElement("p")
-        two.innerText = "Visualize key milestones and deadlines for the major events in each of your cases and automate their progress by completing relevant tasks."
+        two.innerText = "Create tasks, set deadlines, and assign members so everyone knows their responsibilities. Customize tasklists to fit your workflow and solicit client or manager approval."
 
         let three = document.createElement("img")
-        three.src = "https://niftypm.com/_nuxt/img/large@1x.448d33e.webp";
+        three.src = "https://niftypm.com/_nuxt/img/large@1x.16f95bf.webp";
 
         maindata.append(one,two,three);
     }
-    else if(value === "... Organization"){
+    else if(value === "... Consolidate Campaign Assets"){
 
         let one = document.createElement("h1")
-        one.innerText = "Organization"
+        one.innerText = "Consolidate Campaign Assets"
         
         let two = document.createElement("p")
-        two.innerText = "Create, store, and share files, documents, notes, and communications for each of your cases using dedicated projects."
+        two.innerText = "Consolidate all of the creatives for upcoming emails, ads, and other campaigns, as everything uploaded to the project can be found and sorted in the Files section of the project."
 
         let three = document.createElement("img")
-        three.src = "https://niftypm.com/_nuxt/img/large@1x.a3b435f.webp";
+        three.src = "https://niftypm.com/_nuxt/img/large@1x.e8b1696.webp";
 
         maindata.append(one,two,three);
     }
