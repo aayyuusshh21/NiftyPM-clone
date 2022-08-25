@@ -118,7 +118,7 @@ input:checked+.slider:before {
   /* padding: 10px; */
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  margin-top: 20px   ;
+  margin-top: 45px   ;
 }
 
 
@@ -236,3 +236,45 @@ input:checked+.slider:before {
     border-radius: 10px;
 
 }
+
+
+
+
+#sponsor-img{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 'apple verizon data emovis vm ibm loreal nyu';
+  }
+  #apple{
+    grid-area: apple;
+  }
+  #verizon{
+    grid-area: verizon;
+  }
+  #data{
+    grid-area: data;
+  }
+  #emovis{
+    grid-area: emovis;
+  }
+  #vm{
+    grid-area: vm;
+  }
+  #ibm{
+    grid-area: ibm;
+  }
+  #loreal{
+    grid-area: loreal;
+  }
+  #nyu{
+    grid-area: nyu;
+  }
+  #sponsor_img>img{
+    width: 100px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  #sponsor_img>img:nth-child(1){
+    margin-top: -5px;
+    width: 60px;
+  }
