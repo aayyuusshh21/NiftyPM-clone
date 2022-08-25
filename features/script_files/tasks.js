@@ -74,8 +74,8 @@ let showImgOnWebpage = (value) => {
         two.innerText = "Plan tasks in daily, weekly, or monthly contexts with Calendars. Drag and drop to schedule any task."
 
         let three = document.createElement("img")
-        three.src = "https://niftypm.com/_nuxt/img/large@1x.102ba6f.webp";
 
+        three.src = "https://niftypm.com/_nuxt/img/large@1x.102ba6f.webp";
         maindata.append(one, two, three);
         console.log("Tasks ....");
         console.log("Discussions ....")

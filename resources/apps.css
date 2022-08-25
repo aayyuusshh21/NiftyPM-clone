@@ -1,0 +1,56 @@
+#container{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.rc > h1{
+    font-size: 70px;
+}
+
+.rc > p{
+    font-size: 22px;
+}
+
+.list-apps{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 100px 200px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.list-apps>div{
+    padding: 0px 15px;
+}
+
+.list-apps>div span {
+    display: block;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    background: #fff;
+    text-align: center;
+    line-height: 63px;
+    box-shadow: 0 10px 10px hsla(0,0%,77.3%,.4);
+    color: rgb(103, 191, 252);
+    
+}
+.app>a{
+    text-decoration: none;
+}
+.app>a>p{
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+}
+
+.img{
+    margin-left: -160px
+}
+
+
+
