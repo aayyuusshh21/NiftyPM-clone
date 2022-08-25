@@ -14,7 +14,7 @@ let showImgOnWebpage = (value) =>{
     
     
     
-    if(value === "Portfolios ...."){
+    if(value === "Portfolios ."){
         let one = document.createElement("h1")
         one.innerText = "Portfolios"
         
@@ -26,7 +26,7 @@ let showImgOnWebpage = (value) =>{
 
         maindata.append(one,two,three);
     } 
-    else if(value === "Progress Reporting ...."){
+    else if(value === "... Progress Reporting ."){
         let one = document.createElement("h1")
         one.innerText = "Progress Reporting"
         
@@ -38,7 +38,7 @@ let showImgOnWebpage = (value) =>{
 
         maindata.append(one,two,three);
     }
-    else if(value === "Organization ...."){
+    else if(value === "... Organization"){
 
         let one = document.createElement("h1")
         one.innerText = "Organization"
