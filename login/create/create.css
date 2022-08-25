@@ -15,7 +15,7 @@
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: white;
-  height: 65vh;
+  /* height: 65vh; */
 }
 .box > div:nth-child(1) {
   display: flex;
