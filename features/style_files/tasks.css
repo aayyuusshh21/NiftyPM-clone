@@ -12,13 +12,14 @@
 }
 
 #discussion {
-    width: 10rem;
+    width: 35%;
     text-align: center;
     margin: auto;
-    background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
+    background: linear-gradient(90deg, #ff2121, #ff834ade);
     border-radius: 15px;
     color: white;
     padding: 5px;
+    font-size: 15px;
 }
 
 .center h1 {
@@ -29,7 +30,7 @@
 
 .second_P {
     line-height: 1.6;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 
@@ -142,7 +143,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 2rem;
 }
 
@@ -194,8 +195,8 @@
     align-items: center;
     margin: auto;
     border-radius: 9rem;
-    background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
-    color: white;
+    background: linear-gradient(90deg, #ff2121, #ff3939);
+    color: rgb(255, 255, 255);
     border: none;
     font-size: 2.4rem;
 }
@@ -299,10 +300,10 @@
 
 .six img:nth-child(2) {
     position: absolute;
-    right: 10rem;
+    right: 20rem;
     top: 180rem;
-    width: 35rem;
-    height: 20rem;
+    width: 25rem;
+    height: 10rem;
 }
 
 .five {
@@ -312,6 +313,76 @@
     line-height: 1.6;
     margin: auto;
 }
+
+/* FOUR IMG PART DESIGN  */
+
+.Four_img{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem;
+}
+
+.eight img:nth-child(1) {
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.eight img:nth-child(2) {
+    position: absolute;
+    right: 45rem;
+    top: 209rem;
+    width: 35rem;
+    height: 20rem;
+}
+
+.seven {
+    /* border: 2px solid red; */
+    text-align: left;
+    width: 20rem;
+    line-height: 1.6;
+    margin: auto;
+}
+
+/* five img of the website  */
+
+.five_img{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem;
+}
+
+.ten img:nth-child(1) {
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.ten img:nth-child(2) {
+    position: absolute;
+    right: 10rem;
+    top: 240rem;
+    width: 35rem;
+    height: 20rem;
+}
+
+.nine {
+    /* border: 2px solid red; */
+    text-align: left;
+    width: 20rem;
+    line-height: 1.6;
+    margin: auto;
+}
+
+/* LAST BUTTON DESIGN PART  */
 
 .last_bottoms{
     display: flex;
