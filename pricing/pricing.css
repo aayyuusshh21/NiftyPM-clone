@@ -5,6 +5,7 @@
     margin-right: 0px;
 }
 
+
 #heading_title {
     /* border: 1px solid black; */
     width: 50%;
@@ -25,33 +26,14 @@
     text-align: center;
 }
 
-#med_section {
-    border: 1px solid red;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+#inside_main{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 10px;
+    gap: 10px;
+    padding: 22px;
 }
-
-/* #med_section div{
-    border: 1px solid black;
-    width: 60%;
-} */
-#med_section div:nth-child(1) {
-    /* border: 1px solid red; */
-    width: 15%;
-    /* padding: 10px; */
-}
-
-#med_section div:nth-child(2) {
-    border: 4px solid teal;
-    width: 80%;
-}
-
-/* #sidebar+div{
-    width: 100%;
-} */
-
 
 .switch {
     /* border: 1px solid; */
@@ -129,42 +111,128 @@ input:checked+.slider:before {
     font-size: 16px;
 }
 
-#sidebar h3 {
-    /* border: 1px solid red; */
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-family: "Whitney HTF", Lato, sans-serif;
-    color: #4e4e4e;
+#sidebar{
+    /* border: 1px solid blue; */
+  padding-left: 10px;
+  /* padding-top: 30px; */
+  /* padding: 10px; */
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-top: 20px   ;
 }
 
-#sidebar p {
-    /* border: 11px solid; */
-    line-height: 13px;
-    font-size: 15px;
-    font-weight: 500;
-    font-family: "Whitney HTF", Lato, sans-serif;
-    color: #4e4e4e;
-}
 
-#divSection {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 10px;
-    /* margin-top: -20px; */
-    justify-content: space-evenly;
-    gap: 10px;
-}
 
-#divSection ul {
-    border: 1px solid black;
+#div_section{
+    /* border: 1px solid blue; */
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+/* .plane_inner::before{
+    background-color: #6d739d;
+    
+} */
+.plane_head{
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #6d739d;
+    margin-top: 12px;
 }
 
-#divSection #freeHr{
-    /* border: 10px solid #6d739d; */
-    border: 3px solid #6d739d;
-    width: 97%;
-    /* border-radius: 5px; */
+.plane_title{
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #6d739d;
+    font-size: 14px;
+}
+
+.plane_price{
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #6d739d;
+    margin-top: 30px;
+}
+
+.plane_inner_msg{
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #6d739d;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.plane_action{
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 20px;
+    color: #6c729c;
+    font-family: "Whitney HTF",Lato,sans-serif;
+    border: none;
+    background-color: white;
+   
+}
+.btn:hover{
+    text-decoration:underline;
+}
+.hrline{
+    opacity: 0.1;
+}
+
+
+.unlimetedP p{
+    /* border: 1px solid; */
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #4e4e4e;
+}
+
+#free{
+    color: #6c729c;
+}
+
+
+
+/* aksh1 */
+
+#starter{
+    color: #2196F3;
+}
+#pro{
+    color: #02BDAD;
+}
+
+#BusinessID{
+    color: #bb65f7;
+}
+
+#EnterpriseID{
+    color: #424242;
+}
+
+
+
+#colorID{
+    border: 3px solid #bb65f7;
+    border-radius: 10px;
+}
+#FreeClor{
+    border: 3px solid #6c729c;
+    border-radius: 10px;
+}
+
+#StarteColor{
+    border: 3px solid #2196F3;
+    border-radius: 10px;
+}
+
+#ProColor{
+    border: 3px solid #02BDAD;
+    border-radius: 10px;
+
+}
+
+#EnterColor{
+    border: 3px solid #424242;
+    border-radius: 10px;
+
 }
