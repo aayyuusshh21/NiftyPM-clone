@@ -1,1 +1,274 @@
 
+#heading_title {
+    /* border: 1px solid black; */
+    width: 50%;
+    line-height: 25px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#heading_title>h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#heading_title>p {
+    font-size: 25px;
+    margin-top: -10px;
+    text-align: justify;
+    text-align: center;
+}
+
+#inside_main{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 10px;
+    gap: 10px;
+    padding: 22px;
+}
+
+.switch {
+    /* border: 1px solid; */
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 23px;
+    margin-top: -20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    /* margin-top: -10px; */
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    /* background-color: #2196F3; */
+    background-color: teal;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#Monnthly {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 15px;
+
+}
+
+#Anuual {
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+#sidebar{
+    /* border: 1px solid blue; */
+  padding-left: 10px;
+  /* padding-top: 30px; */
+  /* padding: 10px; */
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-top: 45px   ;
+}
+
+
+
+#div_section{
+    /* border: 1px solid blue; */
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+/* .plane_inner::before{
+    background-color: #6d739d;
+    
+} */
+.plane_head{
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #6d739d;
+    margin-top: 12px;
+}
+
+.plane_title{
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #6d739d;
+    font-size: 14px;
+}
+
+.plane_price{
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #6d739d;
+    margin-top: 30px;
+}
+
+.plane_inner_msg{
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #6d739d;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.plane_action{
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 20px;
+    color: #6c729c;
+    font-family: "Whitney HTF",Lato,sans-serif;
+    border: none;
+    background-color: white;
+   
+}
+.btn:hover{
+    text-decoration:underline;
+}
+.hrline{
+    opacity: 0.1;
+}
+
+
+.unlimetedP p{
+    /* border: 1px solid; */
+    font-family: "Whitney HTF",Lato,sans-serif;
+    color: #4e4e4e;
+}
+
+#free{
+    color: #6c729c;
+}
+
+
+
+/* aksh1 */
+
+#starter{
+    color: #2196F3;
+}
+#pro{
+    color: #02BDAD;
+}
+
+#BusinessID{
+    color: #bb65f7;
+}
+
+#EnterpriseID{
+    color: #424242;
+}
+
+
+
+#colorID{
+    border: 3px solid #bb65f7;
+    border-radius: 10px;
+}
+#FreeClor{
+    border: 3px solid #6c729c;
+    border-radius: 10px;
+}
+
+#StarteColor{
+    border: 3px solid #2196F3;
+    border-radius: 10px;
+}
+
+#ProColor{
+    border: 3px solid #02BDAD;
+    border-radius: 10px;
+
+}
+
+#EnterColor{
+    border: 3px solid #424242;
+    border-radius: 10px;
+
+}
+
+
+
+
+#sponsor-img{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 'apple verizon data emovis vm ibm loreal nyu';
+  }
+  #apple{
+    grid-area: apple;
+  }
+  #verizon{
+    grid-area: verizon;
+  }
+  #data{
+    grid-area: data;
+  }
+  #emovis{
+    grid-area: emovis;
+  }
+  #vm{
+    grid-area: vm;
+  }
+  #ibm{
+    grid-area: ibm;
+  }
+  #loreal{
+    grid-area: loreal;
+  }
+  #nyu{
+    grid-area: nyu;
+  }
+  #sponsor_img>img{
+    width: 100px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  #sponsor_img>img:nth-child(1){
+    margin-top: -5px;
+    width: 60px;
+  }
+
