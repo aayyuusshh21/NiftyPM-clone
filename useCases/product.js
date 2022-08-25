@@ -13,7 +13,7 @@ let showImgOnWebpage = (value) =>{
     maindata.innerHTML = "";
     
     
-    if(value === "Strategize Product Decisions ."){
+    if(value === "Strategize Product Decisions ...."){
         let one = document.createElement("h1")
         one.innerText = "Strategize Product Decisions"
         
@@ -25,7 +25,7 @@ let showImgOnWebpage = (value) =>{
 
         maindata.append(one,two,three);
     } 
-    else if(value === "... Define Product Milestone ."){
+    else if(value === "Define Product Milestones ...."){
         let one = document.createElement("h1")
         one.innerText = "Define Product Milestone"
         
@@ -37,7 +37,7 @@ let showImgOnWebpage = (value) =>{
 
         maindata.append(one,two,three);
     }
-    else if(value === "... Prioritize Product Features"){
+    else if(value === "Prioritize Product Features ...."){
 
         let one = document.createElement("h1")
         one.innerText = "Prioritize Product Features"
