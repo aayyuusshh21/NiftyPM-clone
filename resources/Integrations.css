@@ -3,13 +3,11 @@
     height: 100%;
     margin: auto;
     text-align: center;
-    border: 1px solid red;
 }
 .head, .head1{
     width: 60%;
     height: 80%;
     margin: auto;
-    border: 1px solid black;
     margin-top: 50px;
 }
 .head h1{
@@ -65,4 +63,12 @@
     border: 0;
     border-radius: 5px;
     margin-bottom: 50px;
+}
+.head1 P:last-child{
+    font-size: 16px;
+}
+
+.head1>h2+p {
+    color: #6c729c;
+    font-size: 22px;
 }
