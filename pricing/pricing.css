@@ -130,6 +130,7 @@ input:checked+.slider:before {
     padding-right: 5px;
     padding-left: 5px;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 /* .plane_inner::before{
     background-color: #6d739d;
@@ -238,43 +239,27 @@ input:checked+.slider:before {
 }
 
 
+#haurt{
+    /* border :1px solid red; */
+       text-align: center;
+       font-size: 75px;
+       margin-top: 50px;
+       margin-bottom: 40px;
+}
 
+#sponsor_img{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    gap: 40px;
+}
 
-#sponsor-img{
-    display: grid;
-    gap: 5px;
-    grid-template-areas: 'apple verizon data emovis vm ibm loreal nyu';
-  }
-  #apple{
-    grid-area: apple;
-  }
-  #verizon{
-    grid-area: verizon;
-  }
-  #data{
-    grid-area: data;
-  }
-  #emovis{
-    grid-area: emovis;
-  }
-  #vm{
-    grid-area: vm;
-  }
-  #ibm{
-    grid-area: ibm;
-  }
-  #loreal{
-    grid-area: loreal;
-  }
-  #nyu{
-    grid-area: nyu;
-  }
-  #sponsor_img>img{
-    width: 100px;
-    display: inline-block;
-    margin-top: 20px;
-  }
-  #sponsor_img>img:nth-child(1){
-    margin-top: -5px;
-    width: 60px;
-  }
+#sponsor_img img{
+      width: 120px;
+      margin-bottom: 40px;
+}
+
+#sponsor_img #vm{
+    width: 80px;
+}
+
