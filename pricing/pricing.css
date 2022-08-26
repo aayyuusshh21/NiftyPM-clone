@@ -123,6 +123,7 @@ input:checked+.slider:before {
     padding-right: 5px;
     padding-left: 5px;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 /* .plane_inner::before{
     background-color: #6d739d;
@@ -231,6 +232,29 @@ input:checked+.slider:before {
 }
 
 
+#haurt{
+    /* border :1px solid red; */
+       text-align: center;
+       font-size: 75px;
+       margin-top: 50px;
+       margin-bottom: 40px;
+}
+
+#sponsor_img{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    gap: 40px;
+}
+
+#sponsor_img img{
+      width: 120px;
+      margin-bottom: 40px;
+}
+
+#sponsor_img #vm{
+    width: 80px;
+}
 
 
 #sponsor-img{
@@ -271,4 +295,5 @@ input:checked+.slider:before {
     margin-top: -5px;
     width: 60px;
   }
+
 
