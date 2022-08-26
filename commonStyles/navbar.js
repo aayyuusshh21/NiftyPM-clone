@@ -2,11 +2,7 @@ function navbar() {
   return `
        <nav class="navbar">
        <div>
-<<<<<<< HEAD
        <a href="/punchy-flowers-9069/Index.html">
-=======
-         <a href="/punchy-flowers-9069/Index.html">
->>>>>>> fa53d8bb9c41ab98fe33b6512f037784f2161843
            <div class="nifty">
              <img
                class="logo"
