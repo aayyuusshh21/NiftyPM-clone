@@ -109,7 +109,7 @@ body {
   margin-left: 17%;
   width: 83%;
   overflow-y: scroll;
-  
+
   /* margin-left: 17%; */
 }
 .active {
@@ -171,15 +171,82 @@ select {
   border-radius: 5px;
   background-color: white;
 }
-
-a{
+a {
   text-decoration: none;
   color: white;
 }
-.container{
+.container {
   height: 400px;
-  background-color: #00baab;
-  width: 95%;
+  width: 92%;
   margin: auto;
-  background: url();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  width: 50%;
+  text-align: center;
+  line-height: 25px;
+  color: gray;
+  font-weight: 500;
+}
+.icon {
+  color: gray;
+}
+.visible {
+  display: none;
+}
+.project-container {
+  padding: 30px 0;
+  width: 92%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.project-container > div {
+  border-radius: 6px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+}
+.project-details > h3 {
+  border-top: 5px solid #00baab;
+  border-bottom: 1px solid rgb(178, 173, 173);
+  color: #00baab;
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.project-details > p {
+  height: 145px;
+  padding: 15px;
+  color: rgb(75, 71, 71);
+  overflow: hidden;
+  line-height: 25px;
+  overflow-y: scroll;
+}
+.project-details > div {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.project-details > div > p {
+  color: rgb(121, 15, 214);
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+.project-details > div > button {
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  font-weight: 550;
+  font-size: 16px;
+  background-color: rgb(66, 194, 240);
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
 }

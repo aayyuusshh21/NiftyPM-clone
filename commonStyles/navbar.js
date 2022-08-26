@@ -2,7 +2,7 @@ function navbar() {
   return `
        <nav class="navbar">
        <div>
-         <a href="Index.html">
+         <a href="/punchy-flowers-9069/Index.html">
            <div class="nifty">
              <img
                class="logo"
