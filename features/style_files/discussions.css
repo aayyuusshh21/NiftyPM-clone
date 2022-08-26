@@ -1,339 +1,340 @@
 .firstpart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(180deg, #f2f6fb, #fdf9f9);
-    padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #f2f6fb, #fdf9f9);
+  padding-top: 5rem;
 }
 
 .center {
-    /* border: 2px solid red; */
-    text-align: center;
+  /* border: 2px solid red; */
+  text-align: center;
 }
 
 #discussion {
-    width: 10rem;
-    text-align: center;
-    margin: auto;
-    background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
-    border-radius: 15px;
-    color: white;
-    padding: 5px;
+  width: 10rem;
+  text-align: center;
+  margin: auto;
+  background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
+  border-radius: 15px;
+  color: white;
+  padding: 5px;
 }
 
 .center h1 {
-    margin: 2rem;
-    font-weight: bolder;
-    font-size: 40px;
+  margin: 2rem;
+  font-weight: bolder;
+  font-size: 40px;
 }
 
 .second_P {
-    line-height: 1.6;
-    margin: 2rem;
+  line-height: 1.6;
+  margin: 2rem;
 }
 
-
 .input_button {
-    position: relative;
-    margin: 1rem;
+  position: relative;
+  margin: 1rem;
 }
 
 .input_button input {
-    width: 30rem;
-    height: 3.5rem;
-    padding: 1rem;
-    font-size: 20px;
-    border-radius: 7px;
-    /* background-color: rgba(185, 185, 185, 0.468); */
-    border: none;
-    color: #6c729c;
-    transition: .15s;
-    background-color: rgba(185, 198, 217, .2);
-    border: 1px solid transparent;
+  width: 30rem;
+  height: 3.5rem;
+  padding: 1rem;
+  font-size: 20px;
+  border-radius: 7px;
+  /* background-color: rgba(185, 185, 185, 0.468); */
+  border: none;
+  color: #6c729c;
+  transition: 0.15s;
+  background-color: rgba(185, 198, 217, 0.2);
+  border: 1px solid transparent;
 }
 
 .input_button button {
-    position: absolute;
-    right: 1rem;
-    top: 8px;
-    width: 9rem;
-    height: 2.4rem;
-    border-radius: 8px;
-    font-size: 16px;
-    color: white;
-    background-color: #00baab;
-    border: none;
-    cursor: pointer;
-
+  position: absolute;
+  right: 1rem;
+  top: 8px;
+  width: 9rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  background-color: #00baab;
+  border: none;
+  cursor: pointer;
 }
 
 .input_button button:hover {
-    background-color: #007b71;
+  background-color: #007b71;
 }
 
 .input_button button a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .twobuttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .second_button {
-    width: 4rem;
-    height: 3rem;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px -2px black;
-    background-color: white;
+  width: 4rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px -2px black;
+  background-color: white;
 }
 
 .second_button img {
-    width: 2rem;
+  width: 2rem;
 }
 
 .last_Child {
-    font-size: 15px;
-    font-weight: 500;
-    color: #6c729c;
-    text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c729c;
+  text-align: center;
 }
 
 /* LEFT BUTTON OF THE WEBSITE   */
 
 .left_button {
-    width: 100%;
-    height: 3rem;
-    font-size: 1.1rem;
-    text-decoration: none;
-    box-shadow: 0 2px 22px rgb(0 0 0 / 15%);
-    border: none;
-    padding: 2px;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 22px rgb(0 0 0 / 15%);
+  border: none;
+  padding: 2px;
 }
 
 .right_button {
-    width: 100%;
-    height: 3rem;
-    font-size: 1.1rem;
-    text-decoration: none;
-    box-shadow: 0 2px 22px rgb(0 0 0 / 15%);
-    border: none;
-    padding: 2px;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 22px rgb(0 0 0 / 15%);
+  border: none;
+  padding: 2px;
 }
-
 
 /* BOX TWO DESIGN  */
 
 .randomChanging {
-    text-align: center;
-    background-image: linear-gradient(#ffedf8b1, #befff8c3);
-    width: 80%;
-    margin: auto;
-    border-radius: 1rem;
-    margin-top: 5rem;
-    padding: 3rem;
+  text-align: center;
+  background-image: linear-gradient(#ffedf8b1, #befff8c3);
+  width: 80%;
+  margin: auto;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  padding: 3rem;
 }
 
 .p_tags {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.5rem;
-    margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin: 2rem;
 }
 
 .p_tags p:hover {
-    color: #00baab;
-    cursor: pointer;
+  color: #00baab;
+  cursor: pointer;
 }
 
 #changing_data p {
-    font-size: 1.2rem;
-    width: 40rem;
-    margin: auto;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+  font-size: 1.2rem;
+  width: 40rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .Second_box {
-    text-align: center;
-    margin-top: 5rem;
+  text-align: center;
+  margin-top: 5rem;
 }
 
 .Second_box p {
-    color: #8b99ad;
+  color: #8b99ad;
 }
 
 .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .images img {
-    width: 7rem;
-    height: 7rem;
-    margin: 0rem 1rem;
+  width: 7rem;
+  height: 7rem;
+  margin: 0rem 1rem;
 }
 
 /* DISCUSSION_PART */
 
 .More_discussion {
-    text-align: center;
+  text-align: center;
 }
 
 .first_box {
-    width: 4rem;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border-radius: 9rem;
-    background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
-    color: white;
-    border: none;
-    font-size: 2.4rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 9rem;
+  background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
+  color: white;
+  border: none;
+  font-size: 2.4rem;
 }
 
-.first_box~h1 {
-    font-size: 3rem;
-    width: 40rem;
-    margin: auto;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+.first_box ~ h1 {
+  font-size: 3rem;
+  width: 40rem;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
-.first_box~h1~p {
-    font-size: 1.5rem;
-    margin: 1rem auto;
-    color: #6c729c;
+.first_box ~ h1 ~ p {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  color: #6c729c;
 }
 
 .first_img {
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
 }
 
 .two img:nth-child(1) {
-    position: relative;
-    width: 50rem;
-    height: 25rem;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .two img:nth-child(2) {
-    position: absolute;
-    right: 11rem;
-    top: 120rem;
-    width: 35rem;
-    height: 20rem;
+  position: absolute;
+  right: 11rem;
+  top: 120rem;
+  width: 35rem;
+  height: 20rem;
 }
 
 .one {
-    /* border: 2px solid red; */
-    text-align: left;
-    width: 20rem;
-    line-height: 1.6;
-    margin: auto;
+  /* border: 2px solid red; */
+  text-align: left;
+  width: 20rem;
+  line-height: 1.6;
+  margin: auto;
 }
 
 /* second img of second box  */
 .second_img {
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
 }
 
 .three img:nth-child(1) {
-    position: relative;
-    width: 50rem;
-    height: 25rem;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .three img:nth-child(2) {
-    position: absolute;
-    right: 50rem;
-    top: 147rem;
-    width: 35rem;
-    height: 20rem;
+  position: absolute;
+  right: 50rem;
+  top: 147rem;
+  width: 35rem;
+  height: 20rem;
 }
 
 .four {
-    /* border: 2px solid red; */
-    text-align: left;
-    width: 20rem;
-    line-height: 1.6;
-    margin: auto;
+  /* border: 2px solid red; */
+  text-align: left;
+  width: 20rem;
+  line-height: 1.6;
+  margin: auto;
 }
 
 /* third box img styling part  */
 
 .three_img {
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
 }
 
 .six img:nth-child(1) {
-    position: relative;
-    width: 50rem;
-    height: 25rem;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .six img:nth-child(2) {
-    position: absolute;
-    right: 10rem;
-    top: 180rem;
-    width: 35rem;
-    height: 20rem;
+  position: absolute;
+  right: 10rem;
+  top: 180rem;
+  width: 35rem;
+  height: 20rem;
 }
 
 .five {
-    /* border: 2px solid red; */
-    text-align: left;
-    width: 20rem;
-    line-height: 1.6;
-    margin: auto;
+  /* border: 2px solid red; */
+  text-align: left;
+  width: 20rem;
+  line-height: 1.6;
+  margin: auto;
 }
 
-.last_bottoms{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    font-size: 1.5rem;
-    margin: 3rem;
+.last_bottoms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin: 3rem;
 }
 
-#arrow_function{
-    width: 6rem;
+#arrow_function {
+  width: 6rem;
 }
 
-#start_Free_trail{
-    width: 8rem;
-    height: 3rem;
-    font-size: 1rem;
-    border-radius: 1rem;
-    background-color: #00baab;
-    border: none;
-    box-shadow: 0 1px 4px rgb(0 0 0 / 11%);
-    color: white;
-    cursor: pointer;
+#start_Free_trail {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-color: #00baab;
+  border: none;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 11%);
+  color: white;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
