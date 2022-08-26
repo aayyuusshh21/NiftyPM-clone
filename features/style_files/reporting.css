@@ -242,7 +242,7 @@
 .two img:nth-child(2) {
     position: absolute;
     right: 11rem;
-    top: 135rem;
+    top: 127rem;
     width: 35rem;
     height: 20rem;
 }
@@ -275,7 +275,7 @@
 .three img:nth-child(2) {
     position: absolute;
     right: 50rem;
-    top: 163rem;
+    top: 160rem;
     width: 35rem;
     height: 20rem;
 }
@@ -309,7 +309,7 @@
 .six img:nth-child(2) {
     position: absolute;
     right: 20rem;
-    top: 180rem;
+    top: 160rem;
     width: 25rem;
     height: 10rem;
 }

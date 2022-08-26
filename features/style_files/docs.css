@@ -237,7 +237,7 @@
 .two img:nth-child(2) {
     position: absolute;
     right: 11rem;
-    top: 120rem;
+    top: 142rem;
     width: 35rem;
     height: 20rem;
 }
@@ -270,7 +270,7 @@
 .three img:nth-child(2) {
     position: absolute;
     right: 50rem;
-    top: 147rem;
+    top: 172rem;
     width: 35rem;
     height: 20rem;
 }
@@ -304,7 +304,7 @@
 .six img:nth-child(2) {
     position: absolute;
     right: 20rem;
-    top: 180rem;
+    top: 202rem;
     width: 25rem;
     height: 10rem;
 }
@@ -338,7 +338,7 @@
 .eight img:nth-child(2) {
     position: absolute;
     right: 45rem;
-    top: 209rem;
+    top: 232rem;
     width: 35rem;
     height: 20rem;
 }
@@ -372,7 +372,7 @@
 .ten img:nth-child(2) {
     position: absolute;
     right: 10rem;
-    top: 240rem;
+    top: 262rem;
     width: 35rem;
     height: 20rem;
 }

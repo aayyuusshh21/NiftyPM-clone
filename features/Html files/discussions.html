@@ -15,11 +15,13 @@
       href="/punchy-flowers-9069/commonStyles/common.css"
     />
     <link rel="stylesheet" href="../style_files/discussions.css" />
+    <link rel="stylesheet" href="/punchy-flowers-9069/commonStyles/navbar.css">
+    <link rel="stylesheet" href="/punchy-flowers-9069/commonStyles/footer.css">
   </head>
 
   <body>
-    <div class="navbar">
-      <h1>navbar</h1>
+    <div id="navbar">
+
     </div>
     <div class="firstpart">
       <div class="left"></div>
@@ -192,6 +194,15 @@
         ><button id="start_Free_trail">Start Free Trail</button></a
       >
     </div>
+    <div id="Footer_part">
+
+    </div>
   </body>
   <script src="../script_files/Discussions.js"></script>
 </html>
+<script type="module">
+  import footer from "/punchy-flowers-9069/commonStyles/footer.js"
+  import navbar from "/punchy-flowers-9069/commonStyles/navbar.js"
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("Footer_part").innerHTML = footer();
+</script>

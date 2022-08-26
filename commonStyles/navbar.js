@@ -1,9 +1,8 @@
 function navbar() {
   return `
-       
        <nav class="navbar">
        <div>
-         <a href="/Index.html">
+         <a href="Index.html">
            <div class="nifty">
              <img
                class="logo"
@@ -151,7 +150,6 @@ function navbar() {
          </div>
        </div>
      </nav>
-       
        `;
 }
 

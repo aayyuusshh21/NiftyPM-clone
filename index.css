@@ -10,12 +10,15 @@
 
 #play_Video {
   position: relative;
+  margin-top: 8rem;
+}
+
+#play img{
+  width: 2rem;
 }
 
 #play_Video button {
   position: absolute;
-  /* right: 44rem;
-    top: 8rem; */
   top: 6rem;
   left: 44rem;
   right: 44rem;
@@ -344,7 +347,7 @@ hr {
   font-weight: normal;
   font-style: italic;
 }
-a {
+/* a {
   text-decoration: none;
   color: white;
-}
+} */
