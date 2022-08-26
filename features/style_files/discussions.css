@@ -3,7 +3,10 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(180deg, #f2f6fb, #fdf9f9);
-  padding-top: 5rem;
+  padding: 7rem;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 .center {
@@ -12,7 +15,7 @@
 }
 
 #discussion {
-  width: 10rem;
+  width: 40%;
   text-align: center;
   margin: auto;
   background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
@@ -25,6 +28,7 @@
   margin: 2rem;
   font-weight: bolder;
   font-size: 40px;
+  width: 31rem;
 }
 
 .second_P {
@@ -158,6 +162,7 @@
 
 .Second_box {
   text-align: center;
+  margin: auto;
   margin-top: 5rem;
 }
 
@@ -169,6 +174,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .images img {
@@ -337,4 +343,45 @@
 a {
   text-decoration: none;
   color: white;
+}
+
+
+/* RESPONSIVE PART OF THE WEBSITE  */
+
+/* 768PX  TO 1024PX */
+
+
+@media only screen and (min-width: 765px) and (max-width: 1024px) {
+  .firstpart {
+    width: 132%;
+  }
+  .center h1 {
+    width: 33rem;
+  }
+  .randomChanging {
+    width: 142%;
+    padding: 3rem;
+  }
+  .Second_box {
+    width: 142%;
+  }
+  
+  .More_discussion {
+    text-align: center;
+    width: 142%;
+  }
+  .first_img {
+    width: 100%;
+  }
+  .two img:nth-child(1) {
+    width: 35rem;
+    height: 20rem;
+  }
+  
+  .two img:nth-child(2) {
+    right: -13rem;
+    top: 142rem;
+    width: 27rem;
+    height: 15rem;
+  }
 }
