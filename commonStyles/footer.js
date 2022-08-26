@@ -266,7 +266,7 @@ function footers () {
               alt="image"
             />
           </div>
-          <span>Sign up with Google</span>
+          <span> <a href="/punchy-flowers-9069/signUp/signUp.html">Sign Up with Google</a></span>
         </div>
         <p>Free forever. No credit card required.</p>
       </div>
