@@ -105,6 +105,11 @@ body {
 .sidebar > div > div > p:hover {
   cursor: pointer;
 }
+.logOut>a>h4{
+ margin-top: 50px;
+ color: white;
+ border-bottom: none;
+} 
 .details {
   margin-left: 17%;
   width: 83%;
@@ -241,4 +246,7 @@ a {
 }
 .completed-detail div {
   width: 33%;
+}
+.logout>div>a>h4{
+  padding-top: 100%;
 }
