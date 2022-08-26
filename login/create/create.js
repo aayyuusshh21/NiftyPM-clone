@@ -10,7 +10,7 @@ function create() {
       url: url + ".niftypm.com",
     };
     localStorage.setItem("workspace", JSON.stringify(workspace));
-    window.location = "/punchy-flowers-9069/tasks/task.html";
+    window.location = "/punchy-flowers-9069/tasks/createTask.html";
   }
 }
 function input() {

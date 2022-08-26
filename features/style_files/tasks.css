@@ -4,6 +4,7 @@
     align-items: center;
     background: linear-gradient(180deg, #f2f6fb, #fdf9f9);
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .center {
@@ -12,14 +13,14 @@
 }
 
 #discussion {
-    width: 35%;
+    width: 30%;
     text-align: center;
     margin: auto;
     background: linear-gradient(90deg, #ff2121, #ff834ade);
     border-radius: 15px;
     color: white;
     padding: 5px;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .center h1 {
@@ -199,14 +200,14 @@
     color: rgb(255, 255, 255);
     border: none;
     font-size: 2.4rem;
+    margin-top: 4rem;
 }
 
 .first_box~h1 {
     font-size: 3rem;
     width: 40rem;
     margin: auto;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .first_box~h1~p {
@@ -234,7 +235,7 @@
 .two img:nth-child(2) {
     position: absolute;
     right: 11rem;
-    top: 120rem;
+    top: 125rem;
     width: 35rem;
     height: 20rem;
 }
@@ -267,7 +268,7 @@
 .three img:nth-child(2) {
     position: absolute;
     right: 50rem;
-    top: 147rem;
+    top: 151rem;
     width: 35rem;
     height: 20rem;
 }
@@ -301,7 +302,7 @@
 .six img:nth-child(2) {
     position: absolute;
     right: 20rem;
-    top: 180rem;
+    top: 185rem;
     width: 25rem;
     height: 10rem;
 }
@@ -335,7 +336,7 @@
 .eight img:nth-child(2) {
     position: absolute;
     right: 45rem;
-    top: 209rem;
+    top: 215rem;
     width: 35rem;
     height: 20rem;
 }
@@ -369,7 +370,7 @@
 .ten img:nth-child(2) {
     position: absolute;
     right: 10rem;
-    top: 240rem;
+    top: 245rem;
     width: 35rem;
     height: 20rem;
 }

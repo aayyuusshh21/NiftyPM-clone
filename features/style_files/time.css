@@ -196,18 +196,19 @@
     align-items: center;
     margin: auto;
     border-radius: 9rem;
-    background: linear-gradient(90deg, #ff2121, #ff3939);
+    background: linear-gradient(90deg,#ff5a43,#ff735f);
     color: rgb(255, 255, 255);
     border: none;
     font-size: 2.4rem;
+    margin-top: 4rem;
 }
 
 .first_box~h1 {
     font-size: 3rem;
-    width: 40rem;
+    width: 50rem;
     margin: auto;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .first_box~h1~p {
@@ -235,7 +236,7 @@
 .two img:nth-child(2) {
     position: absolute;
     right: 11rem;
-    top: 120rem;
+    top: 145rem;
     width: 35rem;
     height: 20rem;
 }
@@ -268,7 +269,7 @@
 .three img:nth-child(2) {
     position: absolute;
     right: 50rem;
-    top: 147rem;
+    top: 172rem;
     width: 35rem;
     height: 20rem;
 }
@@ -302,7 +303,7 @@
 .six img:nth-child(2) {
     position: absolute;
     right: 20rem;
-    top: 180rem;
+    top: 210rem;
     width: 25rem;
     height: 10rem;
 }
@@ -336,7 +337,7 @@
 .eight img:nth-child(2) {
     position: absolute;
     right: 45rem;
-    top: 209rem;
+    top: 229rem;
     width: 35rem;
     height: 20rem;
 }
@@ -370,7 +371,7 @@
 .ten img:nth-child(2) {
     position: absolute;
     right: 10rem;
-    top: 240rem;
+    top: 260rem;
     width: 35rem;
     height: 20rem;
 }

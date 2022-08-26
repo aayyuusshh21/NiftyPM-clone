@@ -11,12 +11,22 @@ function loginUser() {
       password,
     };
     let userData = JSON.parse(localStorage.getItem("users"));
+    let flag = false;
     for (let i = 0; i < userData.length; i++) {
-      if (userData.email == data.email && userData.password == data.password) {
-        window.location = "/punchy-flowers-9069/login/workspace/workspace.html";
+      if (
+        userData[i].email == data.email &&
+        userData[i].password == data.password
+      ) {
+        flag = true;
+        break;
       } else {
-        alert("User not found. Please enter correct details.");
+        flag = false;
       }
+    }
+    if (flag == true) {
+      window.location = "/punchy-flowers-9069/login/workspace/workspace.html";
+    } else {
+      alert("User not found. Please enter correct details.");
     }
   }
 }
