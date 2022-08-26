@@ -4,19 +4,20 @@
     align-items: center;
     background: linear-gradient(180deg, #f2f6fb, #fdf9f9);
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
 }
 
 .center {
     /* border: 2px solid red; */
     text-align: center;
+
 }
 
 #discussion {
     width: 35%;
     text-align: center;
     margin: auto;
-    background: linear-gradient(90deg, #ff2121, #ff834ade);
+    background: linear-gradient(90deg,#c8367a,#ec62a3);
     border-radius: 15px;
     color: white;
     padding: 5px;
@@ -24,7 +25,7 @@
 }
 
 .center h1 {
-    margin: 2rem;
+    margin: 1rem;
     font-weight: bolder;
     font-size: 40px;
 }
@@ -161,6 +162,11 @@
     margin-top: 1rem;
 }
 
+#changing_data img{
+    width: 50rem;
+    height: 35rem;
+}
+
 .Second_box {
     text-align: center;
     margin-top: 5rem;
@@ -200,13 +206,14 @@
     color: rgb(255, 255, 255);
     border: none;
     font-size: 2.4rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 .first_box~h1 {
     font-size: 3rem;
-    width: 40rem;
+    width: 50rem;
     margin: auto;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -235,7 +242,7 @@
 .two img:nth-child(2) {
     position: absolute;
     right: 11rem;
-    top: 125rem;
+    top: 135rem;
     width: 35rem;
     height: 20rem;
 }
@@ -268,7 +275,7 @@
 .three img:nth-child(2) {
     position: absolute;
     right: 50rem;
-    top: 151rem;
+    top: 163rem;
     width: 35rem;
     height: 20rem;
 }
@@ -303,8 +310,8 @@
     position: absolute;
     right: 20rem;
     top: 180rem;
-    width: 35rem;
-    height: 23rem;
+    width: 25rem;
+    height: 10rem;
 }
 
 .five {
@@ -336,7 +343,7 @@
 .eight img:nth-child(2) {
     position: absolute;
     right: 45rem;
-    top: 214rem;
+    top: 209rem;
     width: 35rem;
     height: 20rem;
 }
@@ -370,7 +377,7 @@
 .ten img:nth-child(2) {
     position: absolute;
     right: 10rem;
-    top: 245rem;
+    top: 240rem;
     width: 35rem;
     height: 20rem;
 }
