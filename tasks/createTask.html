@@ -80,33 +80,31 @@
             <p>Create +</p>
           </div>
           <div>
-            <input type="submit" value="Create Project Task" />
-            <input type="submit" value="Create Personal Task" />
+            <input
+              type="submit"
+              value="Create Project Task"
+              onclick="showProject()"
+            />
+            <input
+              type="submit"
+              value="Create Personal Task"
+              onclick="showTask()"
+            />
           </div>
         </div>
         <div class="container">
-          <div class="project-container">
+          <div class="project-container visible">
             <input type="text" id="pName" placeholder="Enter project name..." />
             <h3>Project Privacy</h3>
-            <div class="radio">
-              <div>
-                <input type="radio" name="p" id="p" />
-                <label for="p">General</label>
-              </div>
-              <div>
-                <input type="radio" name="p" id="b" />
-                <label for="b">Public</label>
-              </div>
-              <div>
-                <input type="radio" name="p" id="c" />
-                <label for="c">Private</label>
-              </div>
-            </div>
+            <select id="privacy">
+              <option value="General">General</option>
+              <option value="Public">Public</option>
+              <option value="Private">Private</option>
+            </select>
             <h3>Description</h3>
-            <textarea id="w3review" name="w3review" rows="4" cols="50">
-            </textarea
-            ><br />
-            <button>Create Project</button>
+            <textarea id="desc" rows="4" cols="50"> </textarea><br />
+            <button onclick="saveProject()">Create Project</button>
+            <button onclick="reset()">Reset</button>
           </div>
           <div class="task-container visible">
             <h1>Add a Task</h1>
@@ -132,3 +130,30 @@
     </div>
   </body>
 </html>
+<script>
+  function showProject() {
+    document.querySelector(".project-container").classList.remove("visible");
+    document.querySelector(".task-container").classList.add("visible");
+  }
+  function showTask() {
+    document.querySelector(".task-container").classList.remove("visible");
+    document.querySelector(".project-container").classList.add("visible");
+  }
+  let projectArray = JSON.parse(localStorage.getItem("projects")) || [];
+  function saveProject() {
+    let name = document.getElementById("pName").value;
+    let privacy = document.getElementById("privacy").value;
+    let description = document.getElementById("desc").value;
+    let projectObj = {
+      name,
+      privacy,
+      description,
+    };
+    projectArray.push(projectObj);
+    localStorage.setItem("projects", JSON.stringify(projectArray));
+    alert("Project Created");
+  }
+  function reset(){
+    
+  }
+</script>
