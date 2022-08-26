@@ -16,7 +16,7 @@
       <div>
         <div class="user">
           <div class="workspace">M</div>
-          <p>masai</p>
+          <p class="workspace-name"></p>
         </div>
         <div>
           <div></div>
@@ -27,8 +27,10 @@
         <input type="search" placeholder="Search anything..." />
       </div>
       <div>
-        <button id="create">+ Create</button>
-        <button id="trial">14 days of trial left</button>
+        <a href="#"><button id="create">+ Create</button></a>
+        <a href="/punchy-flowers-9069/pricing/pricing.html">
+          <button id="trial">14 days of trial left</button></a
+        >
       </div>
     </div>
     <div class="box">
@@ -58,7 +60,7 @@
           </div>
           <div>
             <img
-              src="https://cdn-icons-png.flaticon.com/512/1087/1087927.png"
+              src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/project-management-timeline-icon.png"
               alt=""
             />
             <a href="projectTask.html">Projects</a>
@@ -104,11 +106,10 @@
             <h3>Description</h3>
             <textarea id="desc" rows="4" cols="50"> </textarea><br />
             <button onclick="saveProject()">Create Project</button>
-            <button onclick="reset()">Reset</button>
           </div>
           <div class="task-container visible">
             <h1>Add a Task</h1>
-            <form>
+            <form id="form">
               <label for="name">Task name</label><br />
               <input type="text" id="name" /><br />
               <label for="description">Task description</label><br />
@@ -116,13 +117,19 @@
               <label for="status">Status</label><br />
               <select id="status">
                 <option value="">Select</option>
-                <option value="">Not started</option>
-                <option value="">In progess</option>
-                <option value="">Almost done</option></select
-              ><br />
+                <option value="To do">To do</option>
+                <option value="In progress">In progress</option>
+                <option value="Almost done">Almost done</option>
+              </select>
+              <br />
               <label for="date">Due date</label><br />
-              <input type="datetime-local" id="date" /><br />
-              <input type="submit" value="Create Task" id="create-task" />
+              <input type="date" id="date" /><br />
+              <input
+                type="submit"
+                value="Create Task"
+                id="create-task"
+                onclick="saveTask()"
+              />
             </form>
           </div>
         </div>
@@ -144,16 +151,52 @@
     let name = document.getElementById("pName").value;
     let privacy = document.getElementById("privacy").value;
     let description = document.getElementById("desc").value;
-    let projectObj = {
-      name,
-      privacy,
-      description,
-    };
-    projectArray.push(projectObj);
-    localStorage.setItem("projects", JSON.stringify(projectArray));
-    alert("Project Created");
+    if (name == "" || privacy == "" || description == "") {
+      alert("Please fill the details first");
+    } else {
+      let projectObj = {
+        name,
+        privacy,
+        description,
+      };
+      projectArray.push(projectObj);
+      localStorage.setItem("projects", JSON.stringify(projectArray));
+      alert("Project Created");
+    }
+    document.getElementById("pName").value = "";
+    document.getElementById("privacy").value = "";
+    document.getElementById("desc").value = "";
   }
-  function reset(){
-    
+  let taskArray = JSON.parse(localStorage.getItem("tasks")) || [];
+  function saveTask() {
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let description = document.getElementById("description").value;
+    let status = document.getElementById("status").value;
+    let date = document.getElementById("date").value;
+    if (name == "" || description == "" || status == "" || date == "") {
+      alert("Please fill the details first");
+    } else {
+      let taskObj = {
+        name,
+        description,
+        status,
+        date,
+      };
+      taskArray.push(taskObj);
+      localStorage.setItem("tasks", JSON.stringify(taskArray));
+      alert("Task Created");
+    }
+    document.getElementById("name").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("status").value = "";
+    document.getElementById("date").value = "";
   }
+  function workspace() {
+    let name = JSON.parse(localStorage.getItem("workspace"));
+    console.log(name.name);
+    document.querySelector(".workspace").innerText = name.name[0].toUpperCase();
+    document.querySelector(".workspace-name").innerText = name.name;
+  }
+  workspace();
 </script>
