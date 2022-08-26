@@ -6,23 +6,25 @@
 
 .first_box {
   text-align: center;
+  margin: auto;
 }
 
 #play_Video {
   position: relative;
+  margin: auto;
   margin-top: 8rem;
+  width: 90%;
+
 }
 
-#play img{
+#play img {
   width: 2rem;
 }
 
 #play_Video button {
   position: absolute;
   top: 6rem;
-  left: 44rem;
-  right: 44rem;
-  bottom: 5rem;
+  left: 40rem;
   border: none;
   background-color: white;
   border-radius: 4rem;
@@ -323,31 +325,51 @@ hr {
   border-radius: 2rem;
   padding-left: 4rem;
   padding-right: 4rem;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0.486),
-    rgb(234, 234, 234),
-    rgb(255, 255, 209),
-    rgba(148, 255, 148, 0.619),
-    rgba(120, 120, 255, 0.546),
-    rgba(213, 155, 255, 0.614),
-    rgb(255, 202, 255)
-  );
+  background-image: linear-gradient(to right,
+      rgba(255, 0, 0, 0.486),
+      rgb(234, 234, 234),
+      rgb(255, 255, 209),
+      rgba(148, 255, 148, 0.619),
+      rgba(120, 120, 255, 0.546),
+      rgba(213, 155, 255, 0.614),
+      rgb(255, 202, 255));
   margin-bottom: 3rem;
   box-shadow: 0px 0px 20px -8px black;
 }
 
-/* <<<<<<< HEAD */
-
-/* ======= */
-/* >>>>>>> f9816d81e1f3afdc84d73f106aa40d53ad08c094 */
 #lastBox h1 {
   margin-top: -1rem;
   font-family: Volkhov, sans-serif;
   font-weight: normal;
   font-style: italic;
 }
-/* a {
-  text-decoration: none;
-  color: white;
-} */
+
+/* RESPONSIVENESS OF THE WEBSITE AND DIFFERENT PART OF THE WEBSITE  */
+
+/* FOR MAX-SCREEN PART OF THE COMPUTER   ( MIN - 789PX && MAX - 1024PX )*/
+
+/* Media Query for Tablets Ipads portrait mode */
+
+@media (min-width: 765px) and (max-width: 1024px) {
+  
+  #play_Video button {
+    left: 30rem;
+    bottom: 6rem;
+  }
+
+  /* #play_Video {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 8rem;
+  } */
+  .notmovingimg{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+
+  }
+  
+}
