@@ -226,3 +226,19 @@ a {
   background-color: white;
   cursor: pointer;
 }
+.visible{
+  display: none;
+}
+.completed > div > p {
+  width: 33%;
+}
+.completed-detail {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: rgba(0.1, 0, 0, 0.16) 0px 1px 2px;
+}
+.completed-detail div {
+  width: 33%;
+}
