@@ -1,8 +1,13 @@
 .main-footer {
   background-color: #faf8f9;
 }
+
 img {
   width: 100%;
+}
+
+#double_quotes{
+  width: 15%;
 }
 .footer-1 {
   display: flex;
@@ -10,15 +15,18 @@ img {
   padding: 50px 0 20px 0;
   border-bottom: 1px solid rgb(239, 235, 235);
 }
-.footer-1 > div {
+
+.footer-1>div {
   width: 13%;
   display: flex;
   flex-direction: column;
 }
-.footer-1 > div:nth-child(6) {
+
+.footer-1>div:nth-child(6) {
   width: 15%;
 }
-.footer-1 > div > p {
+
+.footer-1>div>p {
   margin-bottom: 24px;
   font-size: 12px;
   text-transform: uppercase;
@@ -26,7 +34,8 @@ img {
   letter-spacing: 0.2em;
   color: #00baab;
 }
-.footer-1 > div > a {
+
+.footer-1>div>a {
   margin-bottom: 15px;
   font-size: 15px;
   font-weight: 400;
@@ -34,6 +43,7 @@ img {
   color: black;
   line-height: 26px;
 }
+
 .footer-2 {
   width: 80%;
   margin: auto;
@@ -42,28 +52,35 @@ img {
   align-items: center;
   padding: 30px 0;
 }
-.footer-2 > div {
+
+.footer-2>div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer-2 > div:nth-child(2) {
+
+.footer-2>div:nth-child(2) {
   width: 8%;
 }
+
 .footer-2 span {
   color: rgb(153, 148, 148);
 }
+
 .logo {
   width: 90px;
   margin-right: 20px;
   height: 30px;
 }
+
 svg:hover {
   cursor: pointer;
 }
+
 svg:hover .colored-path {
   fill: #00baab;
 }
+
 .signup-box {
   width: 48%;
   margin: auto;
@@ -77,22 +94,26 @@ svg:hover .colored-path {
   justify-content: center;
   align-items: center;
 }
+
 .applogo {
   width: 50px;
   margin-bottom: 12px;
 }
+
 .signup-box h4 {
   margin-bottom: 20px;
   font-size: 43px;
   font-weight: 700;
   margin-bottom: 25px;
 }
+
 .signup-box p {
   text-align: center;
   line-height: 25px;
   color: rgb(24, 23, 23);
   margin-bottom: 24px;
 }
+
 .signup-box input {
   height: 52px;
   width: 74%;
@@ -103,6 +124,7 @@ svg:hover .colored-path {
   background-color: rgba(185, 198, 217, 0.2);
   border: 1px solid transparent;
 }
+
 .signup-box .search {
   display: flex;
   justify-content: space-between;
@@ -110,6 +132,7 @@ svg:hover .colored-path {
   align-items: center;
   margin-bottom: 25px;
 }
+
 .signup-box button {
   width: 25%;
   background-color: #00baab;
@@ -122,6 +145,7 @@ svg:hover .colored-path {
   color: #fff;
   font-weight: 500;
 }
+
 .signup-box .google {
   cursor: pointer;
   height: 52px;
@@ -139,26 +163,32 @@ svg:hover .colored-path {
   align-items: center;
   margin-bottom: 15px;
 }
+
 .google img {
   margin-top: 5px;
   width: 17px;
   margin-right: 20px;
 }
+
 .google span:hover {
   color: #00baab;
 }
+
 .cards {
   padding: 20px 0;
   width: 35%;
   margin: auto;
   display: flex;
 }
-.cards > div {
+
+.cards>div {
   width: 20%;
 }
-.cards > div > img {
+
+.cards>div>img {
   width: 100%;
 }
+
 .slider {
   width: 100%;
   margin: auto;
@@ -169,6 +199,7 @@ svg:hover .colored-path {
   margin-bottom: 20px;
   background-color: #fff;
 }
+
 .slider-track {
   display: flex;
   justify-content: space-between;
@@ -176,14 +207,17 @@ svg:hover .colored-path {
   animation: scroll 30s linear infinite;
   margin-top: 30px;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-600px * 5));
   }
 }
+
 .slider-track-2 {
   display: flex;
   justify-content: space-between;
@@ -191,14 +225,17 @@ svg:hover .colored-path {
   animation: scroll2 30s linear infinite;
   margin-bottom: 70px;
 }
+
 @keyframes scroll2 {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-600px * 5));
   }
 }
+
 .card,
 #gradient {
   height: 300px;
@@ -211,97 +248,87 @@ svg:hover .colored-path {
   border-radius: 14px;
   box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
   background: rgb(120, 226, 227);
-  background: linear-gradient(
-    326deg,
-    rgba(120, 226, 227, 1) 0%,
-    rgba(255, 255, 255, 1) 33%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(326deg, rgba(120, 226, 227, 1) 0%, rgba(255, 255, 255, 1) 33%, rgba(255, 255, 255, 1) 100%);
   text-align: center;
   overflow: hidden;
+  margin: 0px 10px;
 }
+
 .card:nth-child(2) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(237, 201, 142, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(237, 201, 142, 1) 100%);
 }
+
 .card:nth-child(3) {
   background: rgb(247, 239, 239);
-  background: linear-gradient(
-    209deg,
-    rgba(247, 239, 239, 1) 68%,
-    rgba(246, 239, 138, 1) 100%
-  );
+  background: linear-gradient(209deg,
+      rgba(247, 239, 239, 1) 68%,
+      rgba(246, 239, 138, 1) 100%);
 }
+
 .card:nth-child(4) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    335deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(246, 213, 237, 1) 100%
-  );
+  background: linear-gradient(335deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(246, 213, 237, 1) 100%);
 }
+
 .card:nth-child(5) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(241, 180, 180, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(241, 180, 180, 1) 100%);
 }
+
 .card:nth-child(6) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(172, 242, 227, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(172, 242, 227, 1) 100%);
 }
+
 .card:nth-child(7) {
   background: rgb(247, 239, 239);
-  background: linear-gradient(
-    209deg,
-    rgba(247, 239, 239, 1) 68%,
-    rgba(246, 239, 138, 1) 100%
-  );
+  background: linear-gradient(209deg,
+      rgba(247, 239, 239, 1) 68%,
+      rgba(246, 239, 138, 1) 100%);
 }
+
 .card:nth-child(8) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(241, 180, 180, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(241, 180, 180, 1) 100%);
 }
+
 .card:nth-child(9) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    198deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(240, 183, 102, 1) 100%
-  );
+  background: linear-gradient(198deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(240, 183, 102, 1) 100%);
 }
+
 .card:nth-child(6) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(172, 242, 227, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(172, 242, 227, 1) 100%);
 }
-.card > p {
+
+.card>p {
   line-height: 30px;
   font-weight: 400;
   font-size: 18px;
 }
-#gradient > p {
+
+#gradient>p {
   line-height: 30px;
   font-weight: 400;
   font-size: 18px;
 }
+
 .card h4 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -310,6 +337,7 @@ svg:hover .colored-path {
   margin-bottom: 5px;
   color: #56647b;
 }
+
 #gradient h4 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -321,105 +349,99 @@ svg:hover .colored-path {
 
 #gradient:nth-child(4) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(237, 201, 142, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(237, 201, 142, 1) 100%);
 }
+
 #gradient:nth-child(6) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(237, 201, 142, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(237, 201, 142, 1) 100%);
 }
+
 #gradient:nth-child(1) {
   background: rgb(247, 239, 239);
-  background: linear-gradient(
-    209deg,
-    rgba(247, 239, 239, 1) 68%,
-    rgba(246, 239, 138, 1) 100%
-  );
+  background: linear-gradient(209deg,
+      rgba(247, 239, 239, 1) 68%,
+      rgba(246, 239, 138, 1) 100%);
 }
+
 #gradient:nth-child(2) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    335deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(246, 213, 237, 1) 100%
-  );
+  background: linear-gradient(335deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(246, 213, 237, 1) 100%);
 }
+
 #gradient:nth-child(3) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(241, 180, 180, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(241, 180, 180, 1) 100%);
 }
+
 #gradient:nth-child(8) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(172, 242, 227, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(172, 242, 227, 1) 100%);
 }
+
 #gradient:nth-child(5) {
   background: rgb(247, 239, 239);
-  background: linear-gradient(
-    209deg,
-    rgba(247, 239, 239, 1) 68%,
-    rgba(246, 239, 138, 1) 100%
-  );
+  background: linear-gradient(209deg,
+      rgba(247, 239, 239, 1) 68%,
+      rgba(246, 239, 138, 1) 100%);
 }
+
 #gradient:nth-child(10) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(241, 180, 180, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(241, 180, 180, 1) 100%);
 }
+
 #gradient:nth-child(7) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    198deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(240, 183, 102, 1) 100%
-  );
+  background: linear-gradient(198deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(240, 183, 102, 1) 100%);
 }
+
 #gradient:nth-child(9) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(
-    41deg,
-    rgba(246, 241, 241, 1) 68%,
-    rgba(172, 242, 227, 1) 100%
-  );
+  background: linear-gradient(41deg,
+      rgba(246, 241, 241, 1) 68%,
+      rgba(172, 242, 227, 1) 100%);
 }
+
 .banner {
   background-color: #fff;
   padding: 30px 0;
 }
+
 .banner p {
   color: #00baab;
   letter-spacing: 1px;
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .banner h1 {
   letter-spacing: 1px;
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 5px;
 }
-.banner > div {
+
+.banner>div {
   width: 80%;
   margin: auto;
 }
-.banner > div > div {
+
+.banner>div>div {
   display: flex;
   justify-content: space-between;
 }

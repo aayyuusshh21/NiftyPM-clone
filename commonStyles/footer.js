@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="/punchy-flowers-9069/commonStyles/common.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/punchy-flowers-9069/commonStyles/footer.css"
-    />
-  </head>
-  <body>
+function footers () {
+    return `
     <div class="main-footer">
       <div class="banner">
         <div>
@@ -441,5 +426,7 @@
         </div>
       </div>
     </div>
-  </body>
-</html>
+    `
+}
+
+export default footers;
