@@ -43,6 +43,12 @@ nav > div {
 }
 .elements > div > a {
   padding: 0 15px;
+  border-radius: 4px;
+  line-height: 36px;
+  cursor: pointer;
+}
+.elements > div > a {
+  padding: 0 15px;
 }
 .demo {
   text-decoration: none;
