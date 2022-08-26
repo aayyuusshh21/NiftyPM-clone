@@ -15,8 +15,8 @@
     <div class="navbar">
       <div>
         <div class="user">
-          <div class="workspace">M</div>
-          <p>masai</p>
+          <div class="workspace"></div>
+          <p class="workspace-name"></p>
         </div>
         <div>
           <div></div>
@@ -27,8 +27,8 @@
         <input type="search" placeholder="Search anything..." />
       </div>
       <div>
-        <button id="create">+ Create</button>
-        <button id="trial">14 days of trial left</button>
+        <a href="createTask.html"><button id="create">+ Create</button></a>
+        <a href="/punchy-flowers-9069/pricing/pricing.html"><button id="trial">14 days of trial left</button></a>
       </div>
     </div>
     <div class="box">
@@ -111,6 +111,25 @@
             </div>
             <div class="task-container"></div>
           </div>
+          <div class="completed visible">
+            <div> <p>Project Name</p>
+                   <p>Date</p>
+                   <p>Status</p>
+            </div>
+            <div class="completed-container">
+              <div class="completed-detail">
+               <div>
+                Name
+               </div>
+               <div>
+                Date
+               </div>
+               <div>
+                complete
+               </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -191,11 +210,48 @@
       let date = data.filter((elem) => {
         return elem.date == value;
       });
-      display(date);
+      display(data);
     }
   }
   function showCompletedTasks() {
-    let completed = JSON.parse(localStorage.getItem("completedTask"));
-    display(completed);
+
+    if(document.querySelector(".comp").value == "Show Completed"){
+      document.querySelector(".projects").classList.add("visible")
+      document.querySelector(".completed").classList.remove("visible")
+      document.querySelector(".comp").value = "Show all Tasks";
+      let completed = JSON.parse(localStorage.getItem("completedTask"));
+
+      showCompleted();
+
+      function showCompleted() {
+      document.querySelector(".completed-container").innerHTML = "";
+      completed.forEach((elem, index) => {
+        let div = document.createElement("div");
+        div.classList.add("completed-detail");
+        div.innerHTML = `
+    
+      <div><p>${elem.name}</p></div>
+<div> <p class="date">${elem.date}</p></div>
+<div><p class="status">Completed</p></div>
+      `;
+  
+        document.querySelector(".completed-container").append(div);
+      });
+    }
+    }else{
+      document.querySelector(".projects").classList.remove("visible")
+      document.querySelector(".completed").classList.add("visible")
+      document.querySelector(".comp").value = "Show Completed";
+      display(data)
+    }
+
+  
   }
+  function workspace() {
+    let name = JSON.parse(localStorage.getItem("workspace"));
+    console.log(name.name);
+    document.querySelector(".workspace").innerText = name.name[0].toUpperCase();
+    document.querySelector(".workspace-name").innerText = name.name;
+  }
+  workspace();
 </script>

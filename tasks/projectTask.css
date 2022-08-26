@@ -109,6 +109,7 @@ body {
   margin-left: 17%;
   width: 83%;
   overflow-y: scroll;
+  
   /* margin-left: 17%; */
 }
 .active {
@@ -156,34 +157,29 @@ body {
 .nav-3 > div {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 95%;
   margin: auto;
   justify-content: space-around;
 }
 .nav-3 > div input,
 select {
-  width: 23%;
+  width: 24%;
   padding: 10px 20px;
   border: none;
   box-shadow: rgba(0.2, 0, 0, 0.16) 0px 1px 4px;
-  font-size: 15px;
+  font-size: 17px;
   border-radius: 5px;
   background-color: white;
 }
-.container {
-  padding: 30px;
-}
-.container > div {
-  width: 80%;
-  box-shadow: rgba(0.3, 0, 0, 0.26) 0px 1px 4px;
-  height: 400px;
-  margin: auto;
-}
-.container > div > div {
-  padding: 10px 20px;
-  border: 1px solid rgb(222, 218, 218);
-}
+
 a{
   text-decoration: none;
   color: white;
+}
+.container{
+  height: 400px;
+  background-color: #00baab;
+  width: 95%;
+  margin: auto;
+  background: url();
 }
