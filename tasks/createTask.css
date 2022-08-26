@@ -54,6 +54,7 @@ body {
   text-align: center;
   font-size: 15px;
   border: none;
+  cursor: pointer;
 }
 #create {
   background-color: #00baab;

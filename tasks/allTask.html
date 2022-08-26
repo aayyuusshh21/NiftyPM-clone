@@ -57,7 +57,7 @@
           </div>
           <div>
             <img
-              src="https://cdn-icons-png.flaticon.com/512/1087/1087927.png"
+              src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/project-management-timeline-icon.png"
               alt=""
             />
             <a href="projectTask.html">Projects</a>
@@ -81,29 +81,121 @@
         </div>
         <div class="nav-3">
           <div>
-            <select id="sort-project">
-              <option value="">sort by status</option>
-              <option value="">Not started</option>
-              <option value="">In progress</option>
-              <option value="">Almost done</option>
+            <select id="sort-project" onchange="filterStatus()">
+              <option value="">Filter by status</option>
+              <option value="To do">To do</option>
+              <option value="In progress">In progress</option>
+              <option value="Almost done">Almost done</option>
             </select>
-            <select id="sort-task">
-              <option value="">sort by name</option>
-              <option value="">A-Z</option>
-              <option value="">Z-A</option>
+            <select id="sort-task" onchange="sort()">
+              <option value="">Sort by name</option>
+              <option value="ascending">A-Z</option>
+              <option value="descending">Z-A</option>
             </select>
-            <input type="search" placeholder="Search task...." />
-            <input type="date" />
+            <input type="date" onchange="filterDate()" id="datetime" />
+            <input
+              type="submit"
+              value="Show Completed"
+              class="comp"
+              onclick="showCompletedTasks()"
+            />
           </div>
         </div>
         <div class="container">
           <div class="projects">
             <div>
-              <h2>Tasks</h2>
+              <p>Project Name</p>
+              <p>status</p>
+              <p>Due Date</p>
+              <p>Mark as Completed</p>
             </div>
+            <div class="task-container"></div>
           </div>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script>
+  let data = JSON.parse(localStorage.getItem("tasks"));
+  display(data);
+  function display(data) {
+    function showTask() {
+      document.querySelector(".task-container").innerHTML = "";
+      data.forEach((elem, index) => {
+        let div = document.createElement("div");
+        div.classList.add("task-detail");
+        let div2 = document.createElement("div");
+        let button = document.createElement("button");
+        button.classList.add("mark");
+        button.addEventListener("click", () => {
+          remove(elem, index);
+        });
+        button.innerText = "Mark Complete";
+        div2.append(button);
+        div.innerHTML = `
+    
+      <div><p>${elem.name}</p></div>
+<div><p class="status">${elem.status}</p></div>
+<div> <p class="date">${elem.date}</p></div>
+      `;
+        div.append(div2);
+        document.querySelector(".task-container").append(div);
+      });
+    }
+    showTask();
+  }
+
+  let completedData = JSON.parse(localStorage.getItem("completedTask")) || [];
+  function remove(elem, index) {
+    completedData.push(elem);
+    localStorage.setItem("completedTask", JSON.stringify(completedData));
+    data.splice(index, 1);
+    localStorage.setItem("tasks", JSON.stringify(data));
+    display(data);
+  }
+  function filterStatus() {
+    let selected = document.getElementById("sort-project").value;
+    if (selected == "") {
+      display(data);
+    } else {
+      let status = data.filter((elem) => {
+        return elem.status == selected;
+      });
+      display(status);
+    }
+  }
+  function sort() {
+    // let data = JSON.parse(localStorage.getItem("tasks"));
+    let selec = document.getElementById("sort-task").value;
+    console.log(selected);
+    if (selec == "ascending") {
+      data.sort(function (a, b) {
+        return a.description - b.description;
+      });
+      display(data);
+    }
+    if (selec == "descending") {
+      data.sort(function (a, b) {
+        return b.description - a.description;
+      });
+      display(data);
+    }
+    display(data);
+  }
+  function filterDate() {
+    let value = document.getElementById("datetime").value;
+    if (value == "") {
+      display(data);
+    } else {
+      let date = data.filter((elem) => {
+        return elem.date == value;
+      });
+      display(date);
+    }
+  }
+  function showCompletedTasks() {
+    let completed = JSON.parse(localStorage.getItem("completedTask"));
+    display(completed);
+  }
+</script>
