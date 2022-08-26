@@ -186,3 +186,16 @@ body {
       text-decoration: none;
       color: white;
     }
+    .project-completed{
+      box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+      border-radius: 10px;
+      margin: auto;
+      width: 90%;
+      margin-top: 20px;
+      text-align: center;
+      /* align-items: center;
+      justify-content: center; */
+      padding: 30px;
+    }
+   
+    
