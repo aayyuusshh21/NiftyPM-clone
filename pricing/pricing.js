@@ -1,8 +1,8 @@
 
 
-document.querySelector(".switch").addEventListener("change",akashmoreFun);
+document.querySelector(".switch").addEventListener("change",switchbtnfun);
 
-function akashmoreFun(){
+function switchbtnfun(){
     document.querySelector("#stater_amount").innerHTML=null;
     document.querySelector("#pro_amount").innerHTML=null;
     document.querySelector("#business_amount").innerHTML=null;
