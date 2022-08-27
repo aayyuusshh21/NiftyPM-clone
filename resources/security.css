@@ -5,7 +5,6 @@
 
 #container{
     width: 60%;
-    border: 1px solid red;
     text-align: center;
     margin: auto;
     margin-top: 50px;
@@ -40,4 +39,11 @@ h4{
 
 li{
     font-size: 16px;
+}
+
+@media all and (min-width:481px) and (max-width:768px){
+    #container{
+        width: 90%;
+    }
+    
 }

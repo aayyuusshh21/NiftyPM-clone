@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="/punchy-flowers-9069/commonStyles/common.css"
     />
+    <link rel="stylesheet" href="/punchy-flowers-9069/commonStyles/footer.css">
+    <link rel="stylesheet" href="/punchy-flowers-9069/commonStyles/navbar.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -19,6 +21,7 @@
     />
   </head>
   <body>
+    <div id="navbar"></div>
     <div id="container">
       <div class="rc">
         <h1>Remote collaboration, anywhere.</h1>
@@ -58,12 +61,20 @@
             <span><i class="fa-brands fa-chrome"></i></span> 
             <p>INSTALL CHROME EXTENSION</p></a>
         </div>
+        
       </div>
-
       <div class="img">
         <img src="https://niftypm.com/_nuxt/img/large@1x.5de3bf7.webp" alt="">
       </div>
+      
     </div>
+    <div id="Footer_part"></div>
   </body>
 </html>
 <script src="./apps.js"></script>
+<script type="module">
+  import footer from "/punchy-flowers-9069/commonStyles/footer.js"
+  import navbar from "/punchy-flowers-9069/commonStyles/navbar.js"
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("Footer_part").innerHTML = footer();
+</script>

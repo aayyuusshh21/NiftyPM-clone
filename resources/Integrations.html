@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Integrations</title>
     <link rel="stylesheet" href="./Integrations.css" />
+    <link
+      rel="stylesheet"
+      href="/punchy-flowers-9069/commonStyles/footer.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/punchy-flowers-9069/commonStyles/navbar.css"
+    />
   </head>
   <body>
+    <div id="navbar"></div>
     <div id="container">
       <div id="main">
         <div class="head">
@@ -206,15 +215,8 @@
             Love integrations? Hate technical API docs? Zapier gives you access
             to over 2,000 apps to automate workflows for exactly what you need.
           </p>
-          <button class="btn">Start Free Trial</button>
-          <p>
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAOVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC8dlA9AAAAE3RSTlMATUIDRjURCwc+LhkqOSQWIR0fZrQ59wAAASNJREFUKM+FkgluxDAIRcF4X5O5/2HLdxjVbUfqU0QIYPB3TM1570ITOpAWEG3keOPidy6+Y+TZaGQ0NjzBhtjVRpKUhKK6PQbEqTAPLV+oZDNLA4O5UH38yQfzqa6UtCvlgjWhX1cPWFoyad9EsFNz7iWm43KanVhDlPeoIYfMsYfnLctyRxZTTHiHd4L6bu5Qub/wPN4eZqdEBrxg9RAz0fqmzY2WE0LsaxE2ZUNwbstqcUaCULftoUxwPsCxU7VTD0GcU/OaqrBoEDCXUGp6pu9X1QAzcpkfIvRtYwGckMBx+qgboxDBR0wemdyoojLsP4S9NLaZ9WPSNp8+t03njYIAkCeDRcbyDPSqOv/3puLvH5Rb6Ae5Xb2GUOfV0P9/vgBLfggoC71rZwAAAABJRU5ErkJggg=="
-              alt=""
-              width="15"
-            />
-            Don’t see an integration you need? Let us know!
-          </p>
+          <button class="btn" onclick="signup()">Start Free Trial</button>
+          <p>Don’t see an integration you need? Let us know!</p>
         </div>
 
         <div class="head">
@@ -308,5 +310,18 @@
         </div>
       </div>
     </div>
+    <div id="Footer_part"></div>
   </body>
 </html>
+
+<script type="module">
+  import footer from "/punchy-flowers-9069/commonStyles/footer.js";
+  import navbar from "/punchy-flowers-9069/commonStyles/navbar.js";
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("Footer_part").innerHTML = footer();
+</script>
+<script>
+  let signup = () => {
+    window.location.href = "/punchy-flowers-9069/signUp/signUp.html";
+  };
+</script>
