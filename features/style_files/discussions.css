@@ -1,21 +1,16 @@
 .firstpart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: linear-gradient(180deg, #f2f6fb, #fdf9f9);
   padding: 7rem;
   width: 100%;
   margin: auto;
   text-align: center;
-}
-
-.center {
-  /* border: 2px solid red; */
-  text-align: center;
+  display: grid;
+  justify-self: center;
+  align-items: center;
 }
 
 #discussion {
-  width: 40%;
+  width: 15%;
   text-align: center;
   margin: auto;
   background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
@@ -24,8 +19,9 @@
   padding: 5px;
 }
 
-.center h1 {
-  margin: 2rem;
+.firstpart h1 {
+  margin: auto;
+  margin-top: 1rem;
   font-weight: bolder;
   font-size: 40px;
   width: 31rem;
@@ -33,7 +29,10 @@
 
 .second_P {
   line-height: 1.6;
-  margin: 2rem;
+  width: 37rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .input_button {
@@ -102,28 +101,6 @@
   font-weight: 500;
   color: #6c729c;
   text-align: center;
-}
-
-/* LEFT BUTTON OF THE WEBSITE   */
-
-.left_button {
-  width: 100%;
-  height: 3rem;
-  font-size: 1.1rem;
-  text-decoration: none;
-  box-shadow: 0 2px 22px rgb(0 0 0 / 15%);
-  border: none;
-  padding: 2px;
-}
-
-.right_button {
-  width: 100%;
-  height: 3rem;
-  font-size: 1.1rem;
-  text-decoration: none;
-  box-shadow: 0 2px 22px rgb(0 0 0 / 15%);
-  border: none;
-  padding: 2px;
 }
 
 /* BOX TWO DESIGN  */
@@ -203,7 +180,7 @@
   font-size: 2.4rem;
 }
 
-.first_box ~ h1 {
+.first_box~h1 {
   font-size: 3rem;
   width: 40rem;
   margin: auto;
@@ -211,7 +188,7 @@
   margin-bottom: 2rem;
 }
 
-.first_box ~ h1 ~ p {
+.first_box~h1~p {
   font-size: 1.5rem;
   margin: 1rem auto;
   color: #6c729c;
@@ -223,6 +200,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 5rem;
+  gap: 2rem;
 }
 
 .two img:nth-child(1) {
@@ -236,8 +214,8 @@
 .two img:nth-child(2) {
   position: absolute;
   right: 11rem;
-  top: 130rem;
-  width: 35rem;
+  top: auto;
+  width: auto;
   height: 20rem;
 }
 
@@ -256,6 +234,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 5rem;
+  gap: 2rem;
 }
 
 .three img:nth-child(1) {
@@ -269,8 +248,8 @@
 .three img:nth-child(2) {
   position: absolute;
   right: 50rem;
-  top: 160rem;
-  width: 35rem;
+  top: auto;
+  width: auto;
   height: 20rem;
 }
 
@@ -302,9 +281,9 @@
 
 .six img:nth-child(2) {
   position: absolute;
-  right: 10rem;
-  top: 190rem;
-  width: 35rem;
+  right: 20rem;
+  top: auto;
+  width: auto;
   height: 20rem;
 }
 
@@ -340,6 +319,7 @@
   color: white;
   cursor: pointer;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -353,35 +333,405 @@ a {
 
 @media only screen and (min-width: 765px) and (max-width: 1024px) {
   .firstpart {
-    width: 132%;
+    margin: auto;
+    margin-left: 9.5rem;
   }
+
+  #discussion {
+    width: 14%;
+    font-size: 10px;
+  }
+
   .center h1 {
     width: 33rem;
   }
+
   .randomChanging {
-    width: 142%;
+    width: 100%;
     padding: 3rem;
+    margin-left: 9.5rem;
   }
+
   .Second_box {
-    width: 142%;
+    width: 100%;
+    margin-left: 6.5rem;
   }
-  
+
   .More_discussion {
     text-align: center;
-    width: 142%;
+    width: 100%;
+    margin-top: 4rem;
+    margin-left: 9.5rem;
+
   }
+
   .first_img {
     width: 100%;
+    margin: auto;
   }
+
   .two img:nth-child(1) {
-    width: 35rem;
-    height: 20rem;
-  }
-  
-  .two img:nth-child(2) {
-    right: -13rem;
-    top: 142rem;
-    width: 27rem;
+    width: 25%;
     height: 15rem;
   }
+
+  .two img:nth-child(2) {
+    right: -11rem;
+    height: 12rem;
+  }
+
+  .second_img {
+    width: 100%;
+    margin: auto;
+    gap: 17rem;
+    width: 53rem;
+  }
+
+  .three img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .three img:nth-child(2) {
+    right: 20rem;
+    height: 12rem;
+  }
+
+  .three_img {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .six img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .six img:nth-child(2) {
+    right: -5rem;
+    height: 12rem;
+  }
+
+  .last_bottoms {
+    font-size: 1rem;
+    margin-left: 17.5rem;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE DIVIES  */
+
+@media only screen and (min-width: 480px) and (max-width: 764px) {
+  .twobuttons {
+    display: block;
+  }
+
+  .firstpart {
+    background: none;
+  }
+
+  .second_button {
+    width: 30rem;
+    margin-bottom: 2rem;
+  }
+
+  .last_Child {
+    font-size: 20px;
+  }
+
+  #discussion {
+    width: 30%;
+    font-size: 20px;
+  }
+
+  .firstpart h1 {
+    width: 32rem;
+  }
+
+  .second_P {
+    font-size: 2rem;
+    width: 40rem;
+  }
+
+  /* inputs bar of the website  */
+
+  .input_button {
+    position: relative;
+    margin: 1rem;
+  }
+
+  .input_button input {
+    width: 42rem;
+    height: 4.5rem;
+    font-size: 34px;
+  }
+
+  .input_button button {
+    right: 1rem;
+    top: 8px;
+    width: 9rem;
+    height: 3.4rem;
+  }
+
+  .input_button button:hover {
+    background-color: #007b71;
+  }
+
+  .input_button button a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* END OF INPUT TAG  */
+
+  .randomChanging {
+    width: 100%;
+    padding: 1rem;
+    margin-left: 9.5rem;
+  }
+
+  .four {
+    margin-left: 2rem;
+  }
+
+  .p_tags {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: -3px;
+  }
+
+  #changing_data p {
+    width: 26rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .Second_box {
+    width: 100%;
+    margin-left: 9.5rem;
+  }
+
+  .More_discussion {
+    text-align: center;
+    width: 100%;
+    margin-top: 4rem;
+    margin-left: 6.5rem;
+
+  }
+
+  .first_box~h1~p {
+    font-size: 1.5rem;
+  }
+
+  .first_img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .two img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .two img:nth-child(2) {
+    right: -15rem;
+    height: 12rem;
+  }
+
+  .second_img {
+    width: 120%;
+    margin: auto;
+  }
+
+  .three img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .three img:nth-child(2) {
+    right: 17rem;
+    height: 12rem;
+    width: 10rem;
+  }
+
+  .three_img {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .six img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .six img:nth-child(2) {
+    right: -5rem;
+    height: 12rem;
+  }
+
+}
+
+
+/* LAST PART OF THE RESPONSIVE WEBSITE  */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .twobuttons {
+    display: block;
+  }
+
+  .firstpart {
+    background: none;
+  }
+
+  .second_button {
+    width: 30rem;
+    margin-bottom: 2rem;
+  }
+
+  .last_Child {
+    font-size: 20px;
+  }
+
+  #discussion {
+    width: 30%;
+    font-size: 20px;
+  }
+
+  .firstpart h1 {
+    width: 32rem;
+  }
+
+  .second_P {
+    font-size: 2rem;
+    width: 40rem;
+  }
+
+  /* inputs bar of the website  */
+
+  .input_button {
+    position: relative;
+    margin: 1rem;
+  }
+
+  .input_button input {
+    width: 42rem;
+    height: 4.5rem;
+    font-size: 34px;
+  }
+
+  .input_button button {
+    right: 1rem;
+    top: 8px;
+    width: 9rem;
+    height: 3.4rem;
+  }
+
+  .input_button button:hover {
+    background-color: #007b71;
+  }
+
+  .input_button button a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* END OF INPUT TAG  */
+
+  .randomChanging {
+    width: 210%;
+    padding: 1rem;
+
+  }
+
+  .four {
+    margin-left: 20rem;
+    border: 2px solid;
+    width: 98rem;
+    margin-right: 3rem;
+  }
+
+  .p_tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: -3px;
+  }
+
+  #changing_data p {
+    width: 26rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .Second_box {
+    width: 100%;
+    margin-left: 15.5rem;
+  }
+
+  .More_discussion {
+    text-align: center;
+    width: 100%;
+    margin-top: 4rem;
+    margin-left: 6.5rem;
+
+  }
+
+  .first_box~h1~p {
+    font-size: 1.5rem;
+  }
+
+  .first_img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .two img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .two img:nth-child(2) {
+    right: -24rem;
+    height: 12rem;
+  }
+  .images{
+    width: 20rem;
+  }
+
+  .second_img {
+    width: 120%;
+    margin: auto;
+  }
+
+  .three img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .three img:nth-child(2) {
+    right: 17rem;
+    height: 12rem;
+    width: 10rem;
+  }
+
+  .three_img {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .six img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .six img:nth-child(2) {
+    right: -5rem;
+    height: 12rem;
+  }
+
 }
