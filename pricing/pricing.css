@@ -16,13 +16,16 @@ a {
 #heading_title > h1 {
   text-align: center;
   font-weight: bold;
+  font-size: 50px;
+  
 }
 
 #heading_title > p {
-  font-size: 25px;
-  margin-top: -10px;
+  font-size: 18px;
   text-align: justify;
   text-align: center;
+  margin-bottom: 50px;
+  color: rgb(78, 78, 78);
 }
 
 #inside_main{
@@ -35,6 +38,7 @@ a {
 }
 .switch {
   /* border: 1px solid; */
+   border-radius: 10px;
   position: relative;
   display: inline-block;
   width: 40px;
@@ -48,9 +52,10 @@ a {
   height: 0;
 }
 
-.slider {
+.sliders {
   position: absolute;
   cursor: pointer;
+  border-radius: 10px;
   top: 0;
   left: 0;
   right: 0;
@@ -60,7 +65,7 @@ a {
   transition: 0.4s;
 }
 
-.slider:before {
+.sliders:before {
   position: absolute;
   content: "";
   /* margin-top: -10px; */
@@ -71,29 +76,30 @@ a {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border-radius: 10px;
 }
 
-input:checked + .slider {
+input:checked + .sliders {
   /* background-color: #2196F3; */
   background-color: teal;
 }
 
-input:focus + .slider {
+input:focus + .sliders {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked + .sliders:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(15px);
 }
 
 /* Rounded sliders */
-.slider.round {
+.sliders.round {
   border-radius: 20px;
 }
 
-.slider.round:before {
+.sliders.round:before {
   border-radius: 50%;
 }
 
@@ -122,14 +128,22 @@ input:checked + .slider:before {
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   color: rgb(78, 78, 78);
   text-decoration: none;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   margin-top: 45px;
+}
+.pricing{
+  color:#02BDAD;
+
+}
+.pricing:hover{
+  text-decoration-line: underline;
+
 }
 
 #div_section {
   /* border: 1px solid blue; */
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   padding-right: 5px;
   padding-left: 5px;
   border-radius: 10px;
@@ -192,34 +206,6 @@ input:checked + .slider:before {
   color: #6c729c;
 }
 
-/* aksh1 */
-
-#starter {
-  color: #2196f3;
-}
-#pro {
-  color: #02bdad;
-}
-
-#BusinessID {
-  color: #bb65f7;
-}
-
-#EnterpriseID {
-  color: #424242;
-}
-#div_section {
-  border-top: 5px solid #bb65f7;
-}
-#colorID {
-  border: 3px solid #bb65f7;
-  border-radius: 10px;
-}
-#FreeClor {
-  border: 3px solid #6c729c;
-  border-radius: 10px;
-}
-
 
 
 .div4{
@@ -229,6 +215,7 @@ input:checked + .slider:before {
 .div1{
     border-top: 5px solid #6c729c;
     border-radius: 10px;
+  
    
 }
 
@@ -248,12 +235,20 @@ input:checked + .slider:before {
     border-radius: 10px;
 
 }
+#haurt{
+  /* border: 1px solid red; */
+  font-size: 60px;
+  text-align: center;
+  margin-top: 100px;
+}
 
 #sponsor_img {
   display: flex;
   /* border: 1px solid red; */
   justify-content: center;
   gap: 40px;
+  margin: auto;
+  margin-bottom: 100px;
 }
 
 #sponsor_img img {
@@ -326,17 +321,17 @@ input:checked + .slider:before {
 
 #mid_section_part1 h1{
     /* border: 1px solid red; */
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 20px;
 
 }
 
 #mid_section_part1 p{
     /* border: 1px solid red; */
-    width: 40%;
+    width: 44%;
     font-size: 20px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: -10px;
     margin-bottom: 30px;
 }
 
@@ -404,9 +399,9 @@ input:checked + .slider:before {
 
 
 #nifty_stocks{
-    /* border: 1px solid red; */
+    border: 0px solid red;
     /* box-shadow: rgba(44, 32, 32, 0.15) 1.95px 1.95px 2.6px; */
-    /* width: 30%; */
+    width: 40%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
@@ -414,8 +409,8 @@ input:checked + .slider:before {
     /* border: 2px solid black; */
     display:  flex;
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-evenly;
+    /* gap: 10px; */
     padding-top: 10px;
     margin: auto;
 }
@@ -466,14 +461,21 @@ input:checked + .slider:before {
 }
 
 .logoImageGoal{
-    width: 10%;
-    /* margin: auto; */
-    margin-left: 636px;
+    width: 5%;
+    /* height: 200px; */
+    margin: auto;
+    /* margin-left: 636px; */
     /* border: 1px solid; */
     margin-bottom: 30px;
    
 }
 
 .logoImageGoal img{
-    height: 40px;
+    height: 80px;
+}
+
+
+#Shivam{
+  /* border: 10px solid; */
+  margin-top: -4px;
 }
