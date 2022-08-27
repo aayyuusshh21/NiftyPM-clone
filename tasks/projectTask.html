@@ -72,15 +72,13 @@
           <h4>PORTFOLIOS</h4>
           <h4>DIRECT MESSAGES</h4>
         </div>
-        <div class="logOut">
-          
-          <div>
-            <a href="/punchy-flowers-9069/Index.html">
-             <h4>Log Out</h4></a>  
-
+        <a href="/punchy-flowers-9069/Index.html">
+          <div id="logOut">
+            <div>
+              <p>Sign Out</p>
+            </div>
           </div>
-        
-        </div>
+        </a>
       </div>
       <div class="details">
         <div class="nav-2">
@@ -100,10 +98,10 @@
               <option value="Public">Public</option>
               <option value="Private">Private</option>
             </select>
-            <select id="sort-task">
+            <select id="sort-task" onchange="sortProject()">
               <option value="">sort by name</option>
-              <option value="">A-Z</option>
-              <option value="">Z-A</option>
+              <option value="a">A-Z</option>
+              <option value="d">Z-A</option>
             </select>
             <input type="search" placeholder="Search Projects...." />
           </div>
@@ -231,4 +229,18 @@
     document.querySelector(".workspace-name").innerText = name.name;
   }
   workspace();
+  function sortProject() {
+    let select = document.getElementById("sort-task").value;
+    let data = JSON.parse(localStorage.getItem("projects"));
+    console.log(select);
+    if (select == "a") {
+      data.sort((a, b) => {
+        console.log(a, b);
+        return a.name.toUpperCase() - b.name.toUpperCase();
+      });
+    } else {
+      console.log("not sorted");
+    }
+    display(data);
+  }
 </script>

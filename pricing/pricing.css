@@ -25,7 +25,6 @@ a {
   text-align: center;
 }
 
-<<<<<<< HEAD
 #inside_main{
     /* border: 2px solid black; */
     display: grid;
@@ -33,17 +32,6 @@ a {
     gap: 10px;
     width: 90%;
     margin: auto;
-=======
-#inside_main {
-  /* border: 2px solid black; */
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  /* margin: 10px; */
-  gap: 10px;
-  padding: 22px;
->>>>>>> fa53d8bb9c41ab98fe33b6512f037784f2161843
 }
 .switch {
   /* border: 1px solid; */
@@ -110,31 +98,20 @@ input:checked + .slider:before {
 }
 
 #Monnthly {
-<<<<<<< HEAD
     /* border: 1px solid red; */
     display: flex;
     gap: 15px;
     text-decoration: none;
 
-=======
-  /* border: 1px solid red; */
-  display: flex;
-  gap: 15px;
->>>>>>> fa53d8bb9c41ab98fe33b6512f037784f2161843
 }
 #Monnthly>span{
   text-decoration: none;
   color: rgb(78, 78, 78);
 }
 #Anuual {
-<<<<<<< HEAD
     margin-top: -10px;
     font-size: 16px;
     text-decoration: none;
-=======
-  margin-top: -10px;
-  font-size: 16px;
->>>>>>> fa53d8bb9c41ab98fe33b6512f037784f2161843
 }
 
 #sidebar {
@@ -243,7 +220,6 @@ input:checked + .slider:before {
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
 
 
 .div4{
@@ -271,29 +247,6 @@ input:checked + .slider:before {
     border-top: 5px solid #424242;
     border-radius: 10px;
 
-=======
-#StarteColor {
-  border: 3px solid #2196f3;
-  border-radius: 10px;
-}
-
-#ProColor {
-  border: 3px solid #02bdad;
-  border-radius: 10px;
-}
-
-#EnterColor {
-  border: 3px solid #424242;
-  border-radius: 10px;
-}
-
-#haurt {
-  /* border :1px solid red; */
-  text-align: center;
-  font-size: 75px;
-  margin-top: 50px;
-  margin-bottom: 40px;
->>>>>>> fa53d8bb9c41ab98fe33b6512f037784f2161843
 }
 
 #sponsor_img {
@@ -350,7 +303,6 @@ input:checked + .slider:before {
   margin-top: -5px;
   width: 60px;
 }
-<<<<<<< HEAD
 
 
 #mid_section{
@@ -525,5 +477,3 @@ input:checked + .slider:before {
 .logoImageGoal img{
     height: 40px;
 }
-=======
->>>>>>> fa53d8bb9c41ab98fe33b6512f037784f2161843

@@ -247,6 +247,22 @@ a {
 .completed-detail div {
   width: 33%;
 }
-.logout>div>a>h4{
-  padding-top: 100%;
+#logOut {
+  padding: 0%;
+}
+#logOut > div {
+  margin-top: 20px;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 7px;
+}
+#logOut > div > p {
+  color: #00baab;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
