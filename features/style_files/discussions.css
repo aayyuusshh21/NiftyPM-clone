@@ -331,10 +331,11 @@ a {
 /* 768PX  TO 1024PX */
 
 
-@media only screen and (min-width: 765px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 924px) {
   .firstpart {
     margin: auto;
-    margin-left: 9.5rem;
+    background: linear-gradient(180deg, #fdfeff, #fdf9f9);
+    margin-left: 5.5rem;
   }
 
   #discussion {
@@ -348,8 +349,8 @@ a {
 
   .randomChanging {
     width: 100%;
-    padding: 3rem;
-    margin-left: 9.5rem;
+    padding: 1rem;
+    margin-left: 5.5rem;
   }
 
   .Second_box {
@@ -361,7 +362,7 @@ a {
     text-align: center;
     width: 100%;
     margin-top: 4rem;
-    margin-left: 9.5rem;
+    margin-left: 5.5rem;
 
   }
 
@@ -421,13 +422,14 @@ a {
 
 /* MEDIA QUERY FOR MOBILE DIVIES  */
 
-@media only screen and (min-width: 480px) and (max-width: 764px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .twobuttons {
     display: block;
   }
 
   .firstpart {
     background: none;
+    margin-left: -4rem;
   }
 
   .second_button {
@@ -485,9 +487,10 @@ a {
   /* END OF INPUT TAG  */
 
   .randomChanging {
-    width: 100%;
+    width: 168%;
     padding: 1rem;
-    margin-left: 9.5rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
   }
 
   .four {
@@ -514,10 +517,9 @@ a {
 
   .More_discussion {
     text-align: center;
-    width: 100%;
+    width: 160%;
     margin-top: 4rem;
-    margin-left: 6.5rem;
-
+    margin-left: 1.5rem;
   }
 
   .first_box~h1~p {
@@ -535,7 +537,7 @@ a {
   }
 
   .two img:nth-child(2) {
-    right: -15rem;
+    right: -22rem;
     height: 12rem;
   }
 
@@ -550,9 +552,9 @@ a {
   }
 
   .three img:nth-child(2) {
-    right: 17rem;
-    height: 12rem;
-    width: 10rem;
+    right: 2rem;
+    height: 9rem;
+    width: 15rem;
   }
 
   .three_img {
@@ -570,168 +572,9 @@ a {
     right: -5rem;
     height: 12rem;
   }
-
-}
-
-
-/* LAST PART OF THE RESPONSIVE WEBSITE  */
-
-@media only screen and (min-width: 320px) and (max-width: 479px) {
-  .twobuttons {
-    display: block;
-  }
-
-  .firstpart {
-    background: none;
-  }
-
-  .second_button {
-    width: 30rem;
-    margin-bottom: 2rem;
-  }
-
-  .last_Child {
-    font-size: 20px;
-  }
-
-  #discussion {
-    width: 30%;
-    font-size: 20px;
-  }
-
-  .firstpart h1 {
-    width: 32rem;
-  }
-
-  .second_P {
-    font-size: 2rem;
+  .last_bottoms{
     width: 40rem;
-  }
-
-  /* inputs bar of the website  */
-
-  .input_button {
-    position: relative;
-    margin: 1rem;
-  }
-
-  .input_button input {
-    width: 42rem;
-    height: 4.5rem;
-    font-size: 34px;
-  }
-
-  .input_button button {
-    right: 1rem;
-    top: 8px;
-    width: 9rem;
-    height: 3.4rem;
-  }
-
-  .input_button button:hover {
-    background-color: #007b71;
-  }
-
-  .input_button button a {
-    text-decoration: none;
-    font-size: 20px;
-  }
-
-  /* END OF INPUT TAG  */
-
-  .randomChanging {
-    width: 210%;
-    padding: 1rem;
-
-  }
-
-  .four {
-    margin-left: 20rem;
-    border: 2px solid;
-    width: 98rem;
-    margin-right: 3rem;
-  }
-
-  .p_tags {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    margin-top: -3px;
-  }
-
-  #changing_data p {
-    width: 26rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-  }
-
-  .Second_box {
-    width: 100%;
-    margin-left: 15.5rem;
-  }
-
-  .More_discussion {
-    text-align: center;
-    width: 100%;
-    margin-top: 4rem;
-    margin-left: 6.5rem;
-
-  }
-
-  .first_box~h1~p {
-    font-size: 1.5rem;
-  }
-
-  .first_img {
-    width: 100%;
-    margin: auto;
-  }
-
-  .two img:nth-child(1) {
-    width: 25%;
-    height: 15rem;
-  }
-
-  .two img:nth-child(2) {
-    right: -24rem;
-    height: 12rem;
-  }
-  .images{
-    width: 20rem;
-  }
-
-  .second_img {
-    width: 120%;
-    margin: auto;
-  }
-
-  .three img:nth-child(1) {
-    width: 25%;
-    height: 15rem;
-  }
-
-  .three img:nth-child(2) {
-    right: 17rem;
-    height: 12rem;
-    width: 10rem;
-  }
-
-  .three_img {
-    width: 100%;
-    margin: auto;
-    margin-top: 2rem;
-  }
-
-  .six img:nth-child(1) {
-    width: 25%;
-    height: 15rem;
-  }
-
-  .six img:nth-child(2) {
-    right: -5rem;
-    height: 12rem;
+    /* border: 2px solid red; */
   }
 
 }

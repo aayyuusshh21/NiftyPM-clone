@@ -250,6 +250,10 @@ hr {
   margin: auto;
   margin-bottom: 2rem;
 }
+img{
+  width: 90%;
+  border-radius: 1rem;
+}
 
 /* ramdon changing part 2 */
 
