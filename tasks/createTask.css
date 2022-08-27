@@ -197,6 +197,9 @@ textarea {
   font-size: 20px;
   width: 400px;
 }
+.container>.project-container>#desc{
+  width: 100%;
+}
 .project-container > button {
   background-color: #00baab;
   color: white;
@@ -267,4 +270,92 @@ a {
   color: #00baab;
   font-weight: 900;
   letter-spacing: 1px;
+}
+@media   (max-width:720px) and (min-width:480px) {
+  .navbar{
+    padding: 0 10px;
+  }
+  .navbar > div {
+    display: flex;
+    width: 30%;
+    color: white;
+  }
+  .navbar input {
+   display: none;
+ 
+  }
+  .navbar .workspace-name{
+    display: none;
+  }
+  .navbar .workspace{
+    padding: 8px 10px;
+  }
+  .navbar #create{
+    font-size: 12px;
+  }
+  .sidebar a{
+    display: none;
+  }
+  .sidebar #extras h4{
+    display: none;
+  }
+  .sidebar{
+    width: 70px;
+  }
+  .sidebar > div {
+    border-bottom: none;
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container .project-container{
+    width: 100%;
+    padding: 15px;
+  }
+  .container>.project-container > input {
+    width: 100%;
+    padding: 8px 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .container>.project-container>h3{
+    font-size: 10px;
+  }
+  .container>.project-container>select{
+    font-size: 10px;
+  }
+  .container>.project-container>#desc{
+    width: 100%;
+  }
+  .project-container > button{
+    font-size: 10px;
+  }
+   .nav-2  img , p{
+    display: none;
+  }
+  .container>.task-container>h1{
+     font-size: 10px;
+  }
+  .container>.task-container>form{
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 7px;
+  }
+  .container>.task-container>form>label{
+    font-size: 10px;
+  }
+  .container>.task-container>form>select{
+    font-size: 10px;
+  }
+  .container>.task-container>form>#create-task{
+    font-size: 13px;
+  }
+  .container>.task-container>form>input{
+    padding: 5px;
+  }
 }
