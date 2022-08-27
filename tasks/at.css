@@ -266,3 +266,43 @@ a {
   font-weight: 900;
   letter-spacing: 1px;
 }
+@media   (max-width:720px) and (min-width:480px)  {
+  .navbar{
+    padding: 0 10px;
+  }
+  .navbar > div {
+    display: flex;
+    width: 30%;
+    color: white;
+  }
+  .navbar input {
+   display: none;
+ 
+  }
+  .navbar .workspace-name{
+    display: none;
+  }
+  .navbar .workspace{
+    padding: 8px 10px;
+  }
+  .navbar #create{
+    font-size: 12px;
+  }
+  .sidebar a{
+    display: none;
+  }
+  .sidebar #extras h4{
+    display: none;
+  }
+  .sidebar{
+    width: 70px;
+  }
+  .sidebar > div {
+    border-bottom: none;
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
