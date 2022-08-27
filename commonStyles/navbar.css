@@ -12,7 +12,7 @@ nav > div {
   display: flex;
   width: 85%;
   align-items: center;
-  padding: 0 20px;
+  padding: 5px 20px;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -20,9 +20,10 @@ nav > div {
   width: 15%;
 }
 .log {
-  width: 15%;
+  width: 20%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .elements {
   padding: 8px 0;
@@ -85,6 +86,7 @@ a {
   padding: 7px 15px;
   font-weight: 500;
   margin-right: 15px;
+  height: 35px;
 }
 .signup {
   background: #00baab;
@@ -96,6 +98,10 @@ a {
   font-size: 16px;
   padding: 7px 18px;
   font-weight: 500;
+  height: 35px;
+}
+.signup a {
+  color: white;
 }
 .dropdown {
   top: 100%;
@@ -104,7 +110,6 @@ a {
   width: 450px;
   padding: 15px 20px;
   border-radius: 8px;
-  /* margin-top: 9px; */
   background: #fff;
   box-shadow: 0 0 35px rgb(0 0 0 / 20%);
   color: #020202;
@@ -129,4 +134,114 @@ a {
 .elements > div:hover .dropdown {
   visibility: visible;
   position: absolute;
+}
+.navbar i {
+  color: #000;
+}
+.menu-img {
+  width: 23px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 1160px) {
+  .menu-img {
+    display: block;
+  }
+
+  .navbar > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .signup {
+    height: 30px;
+  }
+  .login {
+    height: 30px;
+  }
+  .log {
+    width: 30%;
+  }
+  .elements {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    padding-left: 10px;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(250, 245, 245);
+    width: 100%;
+    display: block;
+    transition: all 0.4s ease;
+  }
+  #check:checked ~ .elements {
+    left: 0;
+  }
+  .elements > div {
+    display: flex;
+  }
+  .elements > div > p {
+    width: 20%;
+  }
+  .elements > div > div {
+    width: 50%;
+  }
+
+  .dropdown {
+    margin-top: -25px;
+  }
+  .elements > div > p:hover .dropdown {
+    visibility: visible;
+    position: absolute;
+  }
+  .elements > div .element-item:hover .dropdown {
+    visibility: visible;
+    position: absolute;
+  }
+}
+@media (max-width: 780px) {
+  .log {
+    display: none;
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-top: -30px;
+    margin-left: 40px;
+  }
+  .dropdown > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .element-item {
+    font-size: 12px;
+  }
+  .elements > div > p {
+    width: 30%;
+  }
+  .logo {
+    width: 60px;
+  }
+  .elements > div > div {
+    width: 70%;
+  }
+}
+@media (max-width: 380px){
+  .dropdown {
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-left: 50px;
+  }
+  .dropdown > div:nth-child(2) {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
 }
