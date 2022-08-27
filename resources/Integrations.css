@@ -72,3 +72,34 @@
     color: #6c729c;
     font-size: 22px;
 }
+
+@media all and (min-width:481px) and (max-width:768px){
+    .divs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
+    }
+    .boxInnerr h4, .boxInnerb h4{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    .boxInnerr p,.boxInnerb p{
+        font-size: 15px;
+    }
+    .head + img{
+        width: auto;
+    }
+    .head, .head1{
+        width: 90%;
+        height: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .head h1{
+        font-size: 30px;
+    }
+    #main{
+        margin: auto;
+    }
+}
