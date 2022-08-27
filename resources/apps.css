@@ -1,11 +1,16 @@
 #container{
     width: 50%;
+    height: 50%;
     margin: auto;
+    margin-top: 200px;
     text-align: center;
 }
 
 .rc > h1{
     font-size: 70px;
+}
+.rc{
+    margin: auto;
 }
 
 .rc > p{
@@ -13,13 +18,14 @@
 }
 
 .list-apps{
-    display: flex;
+    display:flex;
     flex-flow: wrap;
     justify-content: center;
     padding: 0;
-    margin: 100px 200px;
+    margin: 100px 0;
     list-style: none;
     text-decoration: none;
+    width: 100%;
 }
 
 .list-apps>div{
@@ -49,37 +55,27 @@
 }
 
 .img{
-    margin-left: -160px
+    margin: 0 -500px ;
 }
+.img>img{
+    width: 80vw;
+}
+
 
 @media all and (min-width:481px) and (max-width:768px){
     #container{
-        width: 90%;
-        margin: auto;
+        width: 80vh;
     }
 
-    .list-apps{
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        padding: 0;
-        margin: 100px 200px;
-        list-style: none;
-        text-decoration: none;
+    .img>img{
+        width: 50vw;
     }
-
     .rc > h1{
-        font-size: 20px;
+        font-size: 35px;
     }
+    
     
     .rc > p{
         font-size: 18px;
     }
-
-    .img{
-        width: auto;
-        margin:auto;
-    }
 }
-
-

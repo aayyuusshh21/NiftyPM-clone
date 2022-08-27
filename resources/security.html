@@ -10,8 +10,17 @@
       href="/punchy-flowers-9069/commonStyles/common.css"
     />
     <link rel="stylesheet" href="./security.css" />
+    <link
+      rel="stylesheet"
+      href="/punchy-flowers-9069/commonStyles/footer.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/punchy-flowers-9069/commonStyles/navbar.css"
+    />
   </head>
   <body>
+    <div id="navbar"></div>
     <div id="container">
       <h1>Nifty Security</h1>
 
@@ -90,5 +99,13 @@
       </div>
     </div>
     <div class="img"></div>
+    <div id="Footer_part"></div>
   </body>
 </html>
+
+<script type="module">
+  import footer from "/punchy-flowers-9069/commonStyles/footer.js";
+  import navbar from "/punchy-flowers-9069/commonStyles/navbar.js";
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("Footer_part").innerHTML = footer();
+</script>
