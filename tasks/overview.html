@@ -16,7 +16,7 @@
       <div>
         <div class="user">
           <div class="workspace">M</div>
-          <p>masai</p>
+          <p class="workspace-name">masai</p>
         </div>
         <div>
           <div></div>
@@ -27,8 +27,10 @@
         <input type="search" placeholder="Search anything..." />
       </div>
       <div>
-        <button id="create">+ Create</button>
-        <button id="trial">14 days of trial left</button>
+        <a href="createTask.html"><button id="create">+ Create</button></a>
+        <a href="/punchy-flowers-9069/pricing/pricing.html"
+          ><button id="trial">14 days of trial left</button></a
+        >
       </div>
     </div>
     <div class="box">
@@ -70,15 +72,13 @@
           <h4>PORTFOLIOS</h4>
           <h4>DIRECT MESSAGES</h4>
         </div>
-        <div class="logOut">
-          
-          <div>
-            <a href="/punchy-flowers-9069/Index.html">
-             <h4>Log Out</h4></a>  
-
+        <a href="/punchy-flowers-9069/Index.html">
+          <div id="logOut">
+            <div>
+              <p>Sign Out</p>
+            </div>
           </div>
-        
-        </div>
+        </a>
       </div>
       <div class="details">
         <div class="nav-2">
@@ -91,16 +91,15 @@
           </div>
           <div>
             <select id="sort-project">
-              <option value="">sort projects</option>
-              <option value="">sort projects</option>
-              <option value="">sort projects</option>
+              <option value="">Sort Projects</option>
+              <option value="ascending">A-Z</option>
+              <option value="descending">Z-A</option>
             </select>
             <select id="sort-task">
-              <option value="">sort tasks</option>
-              <option value="">sort projects</option>
-              <option value="">sort projects</option>
+              <option value="">Sort Tasks</option>
+              <option value="ascending">A-Z</option>
+              <option value="descending">Z-A</option>
             </select>
-            <input type="search" placeholder="Jump to project...." />
           </div>
         </div>
         <div class="container">
@@ -108,14 +107,13 @@
             <div>
               <h2>Projects</h2>
             </div>
-            <div class="project-completed">
-
-            </div>
+            <div class="project-list"></div>
           </div>
-          <div class="tasks">
+          <div class="projects">
             <div>
               <h2>Tasks</h2>
             </div>
+            <div class="project-list-2"></div>
           </div>
         </div>
       </div>
@@ -123,48 +121,66 @@
   </body>
 </html>
 <script>
-   let data = JSON.parse(localStorage.getItem("projects")) || [];
-  function display(){
-   let container = document.querySelector(".project-completed");
-   container.innerHTML = "";
-   container.style.marginBottom = "40px";
-   data.forEach(function(ele,index){
-    let div = document.createElement("div");
-    let div2 = document.createElement("div");
-    div2.style.display = "flex";
-    div2.style.gap = "30px";
-    div2.style.justifyContent="center";
-    div2.style.marginTop ="50px";
-    let h1 = document.createElement("h1");
-    h1.innerText = `${ele.name}`;
-    
-    h1.style.color = "red";
-
-    let p = document.createElement("p");
-    p.innerText = `${ele.description}`;
-
-    let p2 = document.createElement("p");
-    p2.innerText = `${ele.privacy}`;
-    p2.style.color = "#00baab";
-    let btn = document.createElement("button");
-    
-    btn.addEventListener("click",(ele,index) =>{
-        remove(ele,index);
+  let data = JSON.parse(localStorage.getItem("projects")) || [];
+  function display(data) {
+    document.querySelector(".project-list").innerHTML = "";
+    data.forEach(function (elem, index) {
+      let div = document.createElement("div");
+      div.classList.add("project-details");
+      let div2 = document.createElement("div");
+      let btn = document.createElement("button");
+      btn.innerText = "Delete";
+      btn.addEventListener("click", (elem, index) => {
+        removeProject(elem, index);
+      });
+      div2.append(btn);
+      div.innerHTML = `
+      <div><p>${elem.name}</p></div>
+       <div><p>${elem.privacy}</p></div>
+      `;
+      div.append(div2);
+      document.querySelector(".project-list").append(div);
     });
-   
-    btn.innerText = "DELETE";
-    btn.style.color = "white";
-    btn.style.backgroundColor = "red";
-    btn.style.padding = "10px 15px";
-    btn.style.border = "0";
-    btn.style.borderRadius = "7px";
-    btn.style.cursor ="pointer";
-    div2.append(p2,btn)
-    div.append(h1,p);
-    container.append(div,div2)
-   });
-  
   }
-  display()
-        
+  display(data);
+  function removeProject(elem, index) {
+    data.splice(index, 1);
+    localStorage.setItem("projects", JSON.stringify(data));
+    display(data);
+  }
+  let task = JSON.parse(localStorage.getItem("tasks")) || [];
+  function displayTask(task) {
+    document.querySelector(".project-list-2").innerHTML = "";
+    task.forEach(function (elem, index) {
+      let div = document.createElement("div");
+      div.classList.add("project-details");
+      let div2 = document.createElement("div");
+      let btn = document.createElement("button");
+      btn.innerText = "Delete";
+      btn.addEventListener("click", (elem, index) => {
+        removeTask(elem, index);
+      });
+      div2.append(btn);
+      div.innerHTML = `
+      <div><p>${elem.name}</p></div>
+       <div><p>${elem.status}</p></div>
+
+      `;
+      div.append(div2);
+      document.querySelector(".project-list-2").append(div);
+    });
+  }
+  displayTask(task);
+  function removeTask(elem, index) {
+    task.splice(index, 1);
+    localStorage.setItem("tasks", JSON.stringify(task));
+    displayTask(task);
+  }
+  function workspace() {
+    let name = JSON.parse(localStorage.getItem("workspace"));
+    console.log(name.name);
+    document.querySelector(".workspace").innerText = name.name[0].toUpperCase();
+    document.querySelector(".workspace-name").innerText = name.name;
+  }
+  workspace();
 </script>
