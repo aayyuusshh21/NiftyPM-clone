@@ -52,5 +52,34 @@
     margin-left: -160px
 }
 
+@media all and (min-width:481px) and (max-width:768px){
+    #container{
+        width: 90%;
+        margin: auto;
+    }
+
+    .list-apps{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 100px 200px;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .rc > h1{
+        font-size: 20px;
+    }
+    
+    .rc > p{
+        font-size: 18px;
+    }
+
+    .img{
+        width: auto;
+        margin:auto;
+    }
+}
 
 
