@@ -135,23 +135,11 @@ function navbar() {
         >
       </div>
       <div>
-        <!-- Calendly link widget begin -->
-        <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        />
-        <script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          type="text/javascript"
-          async
-        ></script>
-        <a
-          class="demo element-item"
-          href=""
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/agrawaljoy1'});return false;"
-          >Get a demo</a
-        >
-        <!-- Calendly link widget end -->
+      <a
+      href="/punchy-flowers-9069/getDemo/demo.html"
+      class="element-item"
+      >Get a Demo</a
+    >
       </div>
     </div>
     <div class="log">

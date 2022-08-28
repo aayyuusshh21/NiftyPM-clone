@@ -1,12 +1,10 @@
 .main-footer {
   background-color: #faf8f9;
 }
-
 img {
   width: 100%;
 }
-
-#double_quotes{
+#double_quotes {
   width: 15%;
 }
 .footer-1 {
@@ -15,18 +13,15 @@ img {
   padding: 50px 0 20px 0;
   border-bottom: 1px solid rgb(239, 235, 235);
 }
-
-.footer-1>div {
+.footer-1 > div {
   width: 13%;
   display: flex;
   flex-direction: column;
 }
-
-.footer-1>div:nth-child(6) {
+.footer-1 > div:nth-child(6) {
   width: 15%;
 }
-
-.footer-1>div>p {
+.footer-1 > div > p {
   margin-bottom: 24px;
   font-size: 12px;
   text-transform: uppercase;
@@ -35,7 +30,7 @@ img {
   color: #00baab;
 }
 
-.footer-1>div>a {
+.footer-1 > div > a {
   margin-bottom: 15px;
   font-size: 15px;
   font-weight: 400;
@@ -53,13 +48,13 @@ img {
   padding: 30px 0;
 }
 
-.footer-2>div {
+.footer-2 > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-2>div:nth-child(2) {
+.footer-2 > div:nth-child(2) {
   width: 8%;
 }
 
@@ -181,11 +176,11 @@ svg:hover .colored-path {
   display: flex;
 }
 
-.cards>div {
+.cards > div {
   width: 20%;
 }
 
-.cards>div>img {
+.cards > div > img {
   width: 100%;
 }
 
@@ -248,7 +243,12 @@ svg:hover .colored-path {
   border-radius: 14px;
   box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
   background: rgb(120, 226, 227);
-  background: linear-gradient(326deg, rgba(120, 226, 227, 1) 0%, rgba(255, 255, 255, 1) 33%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(
+    326deg,
+    rgba(120, 226, 227, 1) 0%,
+    rgba(255, 255, 255, 1) 33%,
+    rgba(255, 255, 255, 1) 100%
+  );
   text-align: center;
   overflow: hidden;
   margin: 0px 10px;
@@ -256,74 +256,92 @@ svg:hover .colored-path {
 
 .card:nth-child(2) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(237, 201, 142, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(237, 201, 142, 1) 100%
+  );
 }
 
 .card:nth-child(3) {
   background: rgb(247, 239, 239);
-  background: linear-gradient(209deg,
-      rgba(247, 239, 239, 1) 68%,
-      rgba(246, 239, 138, 1) 100%);
+  background: linear-gradient(
+    209deg,
+    rgba(247, 239, 239, 1) 68%,
+    rgba(246, 239, 138, 1) 100%
+  );
 }
 
 .card:nth-child(4) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(335deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(246, 213, 237, 1) 100%);
+  background: linear-gradient(
+    335deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(246, 213, 237, 1) 100%
+  );
 }
 
 .card:nth-child(5) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(241, 180, 180, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(241, 180, 180, 1) 100%
+  );
 }
 
 .card:nth-child(6) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(172, 242, 227, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(172, 242, 227, 1) 100%
+  );
 }
 
 .card:nth-child(7) {
   background: rgb(247, 239, 239);
-  background: linear-gradient(209deg,
-      rgba(247, 239, 239, 1) 68%,
-      rgba(246, 239, 138, 1) 100%);
+  background: linear-gradient(
+    209deg,
+    rgba(247, 239, 239, 1) 68%,
+    rgba(246, 239, 138, 1) 100%
+  );
 }
 
 .card:nth-child(8) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(241, 180, 180, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(241, 180, 180, 1) 100%
+  );
 }
 
 .card:nth-child(9) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(198deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(240, 183, 102, 1) 100%);
+  background: linear-gradient(
+    198deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(240, 183, 102, 1) 100%
+  );
 }
 
 .card:nth-child(6) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(172, 242, 227, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(172, 242, 227, 1) 100%
+  );
 }
 
-.card>p {
+.card > p {
   line-height: 30px;
   font-weight: 400;
   font-size: 18px;
 }
 
-#gradient>p {
+#gradient > p {
   line-height: 30px;
   font-weight: 400;
   font-size: 18px;
@@ -349,72 +367,92 @@ svg:hover .colored-path {
 
 #gradient:nth-child(4) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(237, 201, 142, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(237, 201, 142, 1) 100%
+  );
 }
 
 #gradient:nth-child(6) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(237, 201, 142, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(237, 201, 142, 1) 100%
+  );
 }
 
 #gradient:nth-child(1) {
   background: rgb(247, 239, 239);
-  background: linear-gradient(209deg,
-      rgba(247, 239, 239, 1) 68%,
-      rgba(246, 239, 138, 1) 100%);
+  background: linear-gradient(
+    209deg,
+    rgba(247, 239, 239, 1) 68%,
+    rgba(246, 239, 138, 1) 100%
+  );
 }
 
 #gradient:nth-child(2) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(335deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(246, 213, 237, 1) 100%);
+  background: linear-gradient(
+    335deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(246, 213, 237, 1) 100%
+  );
 }
 
 #gradient:nth-child(3) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(241, 180, 180, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(241, 180, 180, 1) 100%
+  );
 }
 
 #gradient:nth-child(8) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(172, 242, 227, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(172, 242, 227, 1) 100%
+  );
 }
 
 #gradient:nth-child(5) {
   background: rgb(247, 239, 239);
-  background: linear-gradient(209deg,
-      rgba(247, 239, 239, 1) 68%,
-      rgba(246, 239, 138, 1) 100%);
+  background: linear-gradient(
+    209deg,
+    rgba(247, 239, 239, 1) 68%,
+    rgba(246, 239, 138, 1) 100%
+  );
 }
 
 #gradient:nth-child(10) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(241, 180, 180, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(241, 180, 180, 1) 100%
+  );
 }
 
 #gradient:nth-child(7) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(198deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(240, 183, 102, 1) 100%);
+  background: linear-gradient(
+    198deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(240, 183, 102, 1) 100%
+  );
 }
 
 #gradient:nth-child(9) {
   background: rgb(246, 241, 241);
-  background: linear-gradient(41deg,
-      rgba(246, 241, 241, 1) 68%,
-      rgba(172, 242, 227, 1) 100%);
+  background: linear-gradient(
+    41deg,
+    rgba(246, 241, 241, 1) 68%,
+    rgba(172, 242, 227, 1) 100%
+  );
 }
 
 .banner {
@@ -436,12 +474,81 @@ svg:hover .colored-path {
   margin-bottom: 5px;
 }
 
-.banner>div {
+.banner > div {
   width: 80%;
   margin: auto;
 }
 
-.banner>div>div {
+.banner > div > div {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1100px) {
+  .footer-1 {
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .footer-1 > div {
+    width: 13%;
+  }
+  .footer-1 > div:nth-child(6) {
+    width: 24%;
+  }
+  .footer-1 > div > p {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+  .footer-1 > div > a {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 850px) {
+  .footer-1 {
+    padding: 20px 30px;
+    flex-wrap: wrap;
+  }
+  .footer-1 > div {
+    width: 33%;
+  }
+  .footer-1 > div > p {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .footer-1 > div > a {
+    margin-bottom: 5px;
+  }
+  .footer-2 {
+    width: 95%;
+    padding: 15px 0;
+    font-size: 12px;
+  }
+  .footer-2 > div:nth-child(2) {
+    width: 12%;
+  }
+  .logo {
+    width: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .footer-1 > div {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .footer-1 > div:nth-child(6) {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .footer-2 {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 8px;
+  }
+  .footer-2 > div:nth-child(2) {
+    width: 25%;
+  }
+  .logo {
+    width: 40px;
+  }
 }
