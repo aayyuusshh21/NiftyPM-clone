@@ -7,5 +7,5 @@ function showEmail() {
 }
 showEmail();
 function workspace() {
-  window.location = "/punchy-flowers-9069/login/create/create.html";
+  window.location = "/login/create/create.html";
 }

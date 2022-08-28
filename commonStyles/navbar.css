@@ -232,7 +232,7 @@ a {
     width: 70%;
   }
 }
-@media (max-width: 380px){
+@media (max-width: 380px) {
   .dropdown {
     padding: 5px 10px;
     border-radius: 4px;
