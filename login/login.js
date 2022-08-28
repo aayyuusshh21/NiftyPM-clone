@@ -24,12 +24,12 @@ function loginUser() {
       }
     }
     if (flag == true) {
-      window.location = "/punchy-flowers-9069/login/workspace/workspace.html";
+      window.location = "/login/workspace/workspace.html";
     } else {
       alert("User not found. Please enter correct details.");
     }
   }
 }
 function signUp() {
-  window.location = "/punchy-flowers-9069/signUp/signUp.html";
+  window.location = "/signUp/signUp.html";
 }

@@ -13,6 +13,6 @@ function signUp() {
     };
     userArray.push(data);
     localStorage.setItem("users", JSON.stringify(userArray));
-    window.location = "/punchy-flowers-9069/login/workspace/workspace.html";
+    window.location = "/login/workspace/workspace.html";
   }
 }

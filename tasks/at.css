@@ -105,11 +105,11 @@ body {
 .sidebar > div > div > p:hover {
   cursor: pointer;
 }
-.logOut>a>h4{
- margin-top: 50px;
- color: white;
- border-bottom: none;
-} 
+.logOut > a > h4 {
+  margin-top: 50px;
+  color: white;
+  border-bottom: none;
+}
 .details {
   margin-left: 17%;
   width: 83%;
@@ -231,7 +231,7 @@ a {
   background-color: white;
   cursor: pointer;
 }
-.visible{
+.visible {
   display: none;
 }
 .completed > div > p {
@@ -266,8 +266,8 @@ a {
   font-weight: 900;
   letter-spacing: 1px;
 }
-@media   (max-width:720px) and (min-width:480px)  {
-  .navbar{
+@media (max-width: 720px) and (min-width: 480px) {
+  .navbar {
     padding: 0 10px;
   }
   .navbar > div {
@@ -276,31 +276,30 @@ a {
     color: white;
   }
   .navbar input {
-   display: none;
- 
-  }
-  .navbar .workspace-name{
     display: none;
   }
-  .navbar .workspace{
+  .navbar .workspace-name {
+    display: none;
+  }
+  .navbar .workspace {
     padding: 8px 10px;
   }
-  .navbar #create{
+  .navbar #create {
     font-size: 12px;
   }
-  .sidebar a{
+  .sidebar a {
     display: none;
   }
-  .sidebar #extras h4{
+  .sidebar #extras h4 {
     display: none;
   }
-  .sidebar{
+  .sidebar {
     width: 70px;
   }
   .sidebar > div {
     border-bottom: none;
   }
-  .container{
+  .container {
     width: 100%;
     display: flex;
     flex-direction: row;

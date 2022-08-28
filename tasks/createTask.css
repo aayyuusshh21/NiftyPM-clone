@@ -197,7 +197,7 @@ textarea {
   font-size: 20px;
   width: 400px;
 }
-.container>.project-container>#desc{
+.container > .project-container > #desc {
   width: 100%;
 }
 .project-container > button {
@@ -271,8 +271,8 @@ a {
   font-weight: 900;
   letter-spacing: 1px;
 }
-@media   (max-width:720px) and (min-width:480px) {
-  .navbar{
+@media (max-width: 720px) and (min-width: 480px) {
+  .navbar {
     padding: 0 10px;
   }
   .navbar > div {
@@ -281,40 +281,39 @@ a {
     color: white;
   }
   .navbar input {
-   display: none;
- 
-  }
-  .navbar .workspace-name{
     display: none;
   }
-  .navbar .workspace{
+  .navbar .workspace-name {
+    display: none;
+  }
+  .navbar .workspace {
     padding: 8px 10px;
   }
-  .navbar #create{
+  .navbar #create {
     font-size: 12px;
   }
-  .sidebar a{
+  .sidebar a {
     display: none;
   }
-  .sidebar #extras h4{
+  .sidebar #extras h4 {
     display: none;
   }
-  .sidebar{
+  .sidebar {
     width: 70px;
   }
   .sidebar > div {
     border-bottom: none;
   }
-  .container{
+  .container {
     width: 100%;
     display: flex;
     flex-direction: row;
   }
-  .container .project-container{
+  .container .project-container {
     width: 100%;
     padding: 15px;
   }
-  .container>.project-container > input {
+  .container > .project-container > input {
     width: 100%;
     padding: 8px 5px;
     border: none;
@@ -322,40 +321,41 @@ a {
     font-size: 15px;
     margin-bottom: 20px;
   }
-  .container>.project-container>h3{
+  .container > .project-container > h3 {
     font-size: 10px;
   }
-  .container>.project-container>select{
+  .container > .project-container > select {
     font-size: 10px;
   }
-  .container>.project-container>#desc{
+  .container > .project-container > #desc {
     width: 100%;
   }
-  .project-container > button{
+  .project-container > button {
     font-size: 10px;
   }
-   .nav-2  img , p{
+  .nav-2 img,
+  p {
     display: none;
   }
-  .container>.task-container>h1{
-     font-size: 10px;
+  .container > .task-container > h1 {
+    font-size: 10px;
   }
-  .container>.task-container>form{
+  .container > .task-container > form {
     width: 80%;
     margin: 20px auto;
     padding: 15px;
     border-radius: 7px;
   }
-  .container>.task-container>form>label{
+  .container > .task-container > form > label {
     font-size: 10px;
   }
-  .container>.task-container>form>select{
+  .container > .task-container > form > select {
     font-size: 10px;
   }
-  .container>.task-container>form>#create-task{
+  .container > .task-container > form > #create-task {
     font-size: 13px;
   }
-  .container>.task-container>form>input{
+  .container > .task-container > form > input {
     padding: 5px;
   }
 }

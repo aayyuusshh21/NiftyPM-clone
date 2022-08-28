@@ -180,7 +180,7 @@
   font-size: 2.4rem;
 }
 
-.first_box~h1 {
+.first_box ~ h1 {
   font-size: 3rem;
   width: 40rem;
   margin: auto;
@@ -188,7 +188,7 @@
   margin-bottom: 2rem;
 }
 
-.first_box~h1~p {
+.first_box ~ h1 ~ p {
   font-size: 1.5rem;
   margin: 1rem auto;
   color: #6c729c;
@@ -325,11 +325,9 @@ a {
   color: white;
 }
 
-
 /* RESPONSIVE PART OF THE WEBSITE  */
 
 /* 768PX  TO 1024PX */
-
 
 @media only screen and (min-width: 601px) and (max-width: 924px) {
   .firstpart {
@@ -363,7 +361,6 @@ a {
     width: 100%;
     margin-top: 4rem;
     margin-left: 5.5rem;
-
   }
 
   .first_img {
@@ -522,7 +519,7 @@ a {
     margin-left: 1.5rem;
   }
 
-  .first_box~h1~p {
+  .first_box ~ h1 ~ p {
     font-size: 1.5rem;
   }
 
@@ -572,9 +569,8 @@ a {
     right: -5rem;
     height: 12rem;
   }
-  .last_bottoms{
+  .last_bottoms {
     width: 40rem;
     /* border: 2px solid red; */
   }
-
 }

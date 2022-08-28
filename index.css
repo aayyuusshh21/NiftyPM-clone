@@ -14,7 +14,6 @@
   margin: auto;
   margin-top: 8rem;
   width: 90%;
-
 }
 
 #play img {
@@ -184,7 +183,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-#Free_forever{
+#Free_forever {
   margin-top: 2rem;
 }
 
@@ -341,14 +340,16 @@ img {
   border-radius: 2rem;
   padding-left: 4rem;
   padding-right: 4rem;
-  background-image: linear-gradient(to right,
-      rgba(255, 0, 0, 0.486),
-      rgb(234, 234, 234),
-      rgb(255, 255, 209),
-      rgba(148, 255, 148, 0.619),
-      rgba(120, 120, 255, 0.546),
-      rgba(213, 155, 255, 0.614),
-      rgb(255, 202, 255));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.486),
+    rgb(234, 234, 234),
+    rgb(255, 255, 209),
+    rgba(148, 255, 148, 0.619),
+    rgba(120, 120, 255, 0.546),
+    rgba(213, 155, 255, 0.614),
+    rgb(255, 202, 255)
+  );
   margin-bottom: 3rem;
   box-shadow: 0px 0px 20px -8px black;
 }
@@ -367,7 +368,6 @@ img {
 /* Media Query for Tablets Ipads portrait mode */
 
 @media (min-width: 600px) and (max-width: 1024px) {
-
   #play_Video button {
     left: 23rem;
     bottom: 6rem;
@@ -413,7 +413,7 @@ img {
   }
 
   hr {
-    margin-left: 11rem
+    margin-left: 11rem;
   }
 
   #Free_forever {
@@ -424,5 +424,4 @@ img {
     width: 100%;
     margin-left: 6.5rem;
   }
-
 }
